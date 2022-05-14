@@ -1,0 +1,23 @@
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px 40px;
+    border-bottom: 1px solid #C7C7C7;
+}
+.text-logo {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 34px;
+}
+.text-logo > span {
+    color: red;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 22px;
+}
+li:not(:last-child) { 
+    margin-right: 22px;
+ }

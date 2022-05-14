@@ -1,0 +1,39 @@
+.main-section {
+    padding: 10% 10%;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-container h3 {
+    font-size: 76px;
+    margin-bottom: 8px;
+}
+.main-container h3 > span {
+    color: red;
+}
+.main-container div {
+    font-size: 24px;
+}
+.tab {
+    margin-left: 20px;
+}
+.main-container p > span {
+    color: red;
+}
+.more {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 32px;
+    text-align: center;
+}
+.left-div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+}
+.right-div {
+    min-width: 45%;
+}
