@@ -41,8 +41,8 @@ const Main = () => {
                             />
                         </h3>
                         <p><span className='tab'></span>I'm a <span>Front end developer </span>
-                            as well as an <span>artist</span>
-                            . I create arts and responsive websites for a living.</p>
+                            as well as an <span>artist</span> living in Myanmar
+                            . I enjoy turning abstract ideas into a work of art.</p>
                         <p className='more'>I wanna know more!</p>
                     </div>
                     <div className='right-div tagcloud'>

@@ -1,5 +1,12 @@
 .main-section {
     padding: 8% 10%;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),url(http://localhost:3000/static/media/wallpaper.2f325b2c081b4c0a3ce7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 .main-container {
     display: flex;
