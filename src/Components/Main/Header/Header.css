@@ -7,6 +7,9 @@
     border-bottom: 1px solid #C7C7C7;
     background: #303030;
     color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
 }
 .text-logo {
     font-family: 'Advent Pro', sans-serif;

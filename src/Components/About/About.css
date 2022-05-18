@@ -1,0 +1,72 @@
+.about-section {
+    background: #303030;
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+}
+.about-section > h3 {
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+.about-section::before {
+    content: 'More';
+    position: absolute;
+    color: white;
+    margin-top: -15px;
+    transform: rotate(-30deg);
+    margin-left: -25px;
+    font-family: 'Advent Pro';
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.first-article {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.first-article .left-div {
+    width: 70%;
+}
+.first-article .right-div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.right-div {
+    position: relative;
+}
+.right-div > div {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+.right-div > div::after {
+    content: '"When I had long hair"';
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -60px;
+    font-size: 12px;
+}
+.right-div > div > img {
+    width: 200px;
+}
+.overlay {
+    background: #8831b7a3;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.overlay:hover {
+    transform: scale(0.0);
+    transition: 1s;
+}
+.left-div > span {
+    color: #b81458;
+}
