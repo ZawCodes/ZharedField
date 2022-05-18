@@ -22,9 +22,9 @@ const Main = () => {
             setLetterClass('text-animate-hover')
         }, 2500)
 
-        if (document.getElementsByClassName('tagcloud').length == 1) {
-            TagCloud('.tagcloud', texts, options);
-        }
+        // if (document.getElementsByClassName('tagcloud').length == 1) {
+        //     TagCloud('.tagcloud', texts, options);
+        // }
     }, [])
 
     return (
@@ -45,8 +45,8 @@ const Main = () => {
                             . I enjoy turning abstract ideas into a work of art.</p>
                         <p className='more'>I wanna know more!</p>
                     </div>
-                    <div className='right-div tagcloud'>
-                    </div>
+                    {/* <div className='right-div tagcloud'>
+                    </div> */}
                 </main>
             </section>
         </>
