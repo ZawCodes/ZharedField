@@ -43,7 +43,7 @@
     flex-direction: column;
 
 }
-.left-div > p {
+.main-container .left-div > p {
     padding: 40px;
     opacity: 0;
     animation: fadeInDown;
@@ -61,4 +61,19 @@
     animation-duration: 2s;
     /* animation-delay: 2s; */
     animation-fill-mode: forwards;
+}
+.cv-download {
+    height: 40px;
+    width: 300px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-35deg);
+    position: absolute;
+    left: -60px;
+    top: 100px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
 }

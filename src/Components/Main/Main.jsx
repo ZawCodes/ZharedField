@@ -31,6 +31,9 @@ const Main = () => {
         <>
             <Header />
             <section className='main-section'>
+                <div className='cv-download'>
+                    Download CV Here!
+                </div>
                 <main className='main-container'>
                     <div className='left-div'>
                         <h3>
