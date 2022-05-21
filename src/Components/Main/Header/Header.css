@@ -4,12 +4,12 @@
     align-items: center;
     height: 70px;
     padding: 10px 40px;
-    border-bottom: 1px solid #C7C7C7;
-    background: #303030;
+    background: #0a4e59;
     color: white;
     z-index: 1;
     position: fixed;
     width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 .text-logo {
     font-family: 'Advent Pro', sans-serif;
@@ -18,11 +18,11 @@
 .text-logo > span {
     color: #ff4040;
 }
-nav > ul {
+.header-wrap nav > ul {
     list-style-type: none;
     display: flex;
     font-size: 18px;
 }
-li:not(:last-child) { 
+.header-wrap li:not(:last-child) { 
     margin-right: 22px;
  }

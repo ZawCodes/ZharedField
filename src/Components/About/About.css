@@ -1,8 +1,8 @@
 .about-section {
-    background: #303030;
+    /* background: #303030; */
     height: 100vh;
     width: 100%;
-    padding: 5%;
+    padding: 5% 10%;
 }
 .about-section > h3 {
     color: white;
@@ -38,13 +38,13 @@
 .right-div {
     position: relative;
 }
-.right-div > div {
+.right-div .me-pic {
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
     height: 200px;
 }
-.right-div > div::after {
+.right-div .me-pic::after {
     content: '"When I had long hair"';
     position: absolute;
     color: white;
@@ -136,6 +136,17 @@
     bottom: -100px;
     left: 250px;
 }
-.about-section p::first-letter {
+/* .about-section p::first-letter {
     font-size: 200%;
+} */
+.about-skill {
+    margin-top: 10rem;
+    color: #cdcdcd;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amdon-group {
+    color: #ff6476;
 }

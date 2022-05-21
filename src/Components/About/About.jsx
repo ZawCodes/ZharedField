@@ -15,7 +15,7 @@ const About = () => {
               <p>
               <span className='tab'></span>My real name is Zaw Htet Aung.
                   I'm 24 as of this moment.
-                   I've been working as a full-time front end developer at <span>the Amdon group</span> since I graduated my university in 2019, 
+                   I've been working as a full-time front end developer at <span className="amdon-group">the Amdon group</span> since I graduated my university in 2019, 
                    December with a Bachelor's degree in Software Engineering.
                     I'm enthusiastic about creating visually pleasing stuffs whether they maybe an art or a web application.
                      Being creative with the ideas is the easy part of a process.
@@ -25,7 +25,7 @@ const About = () => {
               </p>
                 </div>
                 <div className='right-div'>
-                    <div>
+                    <div className='me-pic'>
                       {/* <div className='overlay'></div>  */}
                       <img src={Mepic}/>
                     </div>
@@ -41,11 +41,14 @@ const About = () => {
               </div>
               <div className='right-div'>
              <p>
-             <span className='tab'></span>As an artist, I take inspirations from different places and try to make them my own. Building a website is a lot similiar to making an art piece.
+             <span className='tab'></span>As an artist, I tend to take inspirations from different places and try to make them my own. Building a website is a lot similiar to making an art piece.
                When you've mastered to gather, combine and recreate the stuff you want, you can do anything.
              </p>
               </div>
             </article>
+            <div className='about-skill'>
+              <span>But what about your skills?</span>
+            </div>
         </section>
     </>
   )

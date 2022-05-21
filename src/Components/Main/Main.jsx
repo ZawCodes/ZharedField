@@ -45,7 +45,7 @@ const Main = () => {
                         </h3>
                         <p><span className='tab'></span>I'm a <span>Front end developer </span>
                             as well as an <span>artist</span> living in Myanmar
-                            . I enjoy turning abstract ideas into a work of art.</p>
+                            . I build online E-learning platforms for my company.</p>
                         <p className='more'>I wanna know more!</p>
                     </div>
                     {/* <div className='right-div tagcloud'>

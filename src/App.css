@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Courier+Prime&family=Poppins:wght@100;400;600&display=swap');
 @import 'animate.css';
 
 * {
@@ -11,5 +11,6 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: #303030;
+  color: white;
+  background: #0a4e59;
 }
