@@ -1,0 +1,60 @@
+.work-section {
+    min-height: 100vh;
+    padding: 5% 10%;
+    background: #0c5d6b;
+}
+.work-section > h3 {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    border-bottom: 2px solid #33e1ff;
+}
+.exp-tree {
+    margin: 5rem 0;
+}
+.year-00 , .year-01, .year-02 {
+    display: flex;
+}
+.div0, .div2 {
+    width: 45%;
+}
+.div1 {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div1 > img {
+    width: min-content;
+}
+.showcase {
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.project1, .project2, .project3 {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.showcase > div:not(:last-child) {
+    margin-right: 20px;
+}
+.project-article {
+    margin-top: 3rem;
+}
+#classwerkz {
+    color: #FF0000;
+}
+#nodma {
+    color: #27AAE1;
+}
+#nodma span {
+    color: #EE4983;
+}
+#stemwerkz {
+    color : #B8A02B;
+}

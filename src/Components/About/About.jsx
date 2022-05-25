@@ -14,13 +14,13 @@ const About = () => {
                 <div className='left-div'>
               <p>
               <span className='tab'></span>My real name is Zaw Htet Aung.
-                  I'm 24 as of this moment.
+                  I'm a 24 y/o junior web developer as well as an amateur artist.
                    I've been working as a full-time front end developer at <span className="amdon-group">the Amdon group</span> since I graduated my university in 2019, 
                    December with a Bachelor's degree in Software Engineering.
                     I'm enthusiastic about creating visually pleasing stuffs whether they maybe an art or a web application.
                      Being creative with the ideas is the easy part of a process.
                       And the difficult part is where you actually bring those ideas into reality.
-                        This is the step where a lot of starters fail. 
+                        This is the step where a lot of juniors fail. 
                         And below is my approach in tackling this problem.
               </p>
                 </div>
@@ -46,9 +46,9 @@ const About = () => {
              </p>
               </div>
             </article>
-            <div className='about-skill'>
+            {/* <div className='about-skill'>
               <span>But what about your skills?</span>
-            </div>
+            </div> */}
         </section>
     </>
   )

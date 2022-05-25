@@ -51,9 +51,9 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
-.right-div {
+/* .right-div {
     min-width: 45%;
-}
+} */
 .tagcloud {
     color: #ff4040;
     opacity: 0;

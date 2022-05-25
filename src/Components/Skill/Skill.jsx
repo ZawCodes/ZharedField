@@ -59,7 +59,7 @@ const Skill = () => {
                         </div>
                     </div>
                 </article>
-                <h3>Education</h3>
+                <h2>Education</h2>
                 <article className='education-article'>
                     <div>
                         <div className='flex-column'>

@@ -43,10 +43,9 @@ const Main = () => {
                             idx={1}
                             />
                         </h3>
-                        <p><span className='tab'></span>I'm a <span>Front end developer </span>
-                            as well as an <span>artist</span> living in Myanmar
-                            . I build online E-learning platforms for my company.</p>
-                        <p className='more'>I wanna know more!</p>
+                        <p><span className='tab'></span>I'm a <span>Front end developer </span>with 3 years of experience
+                           living in Myanmar. I build online e-learning platforms and classroom management systems for my company.</p>
+                        <p className='more'>More about me</p>
                     </div>
                     {/* <div className='right-div tagcloud'>
                     </div> */}
