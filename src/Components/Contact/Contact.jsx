@@ -1,6 +1,7 @@
 import React,{ useRef }  from 'react'
 import './Contact.css'
 import emailjs from "emailjs-com";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Contact = () => {
     const form = useRef();
@@ -31,6 +32,14 @@ const Contact = () => {
                     <button className='contact-btn mt-2' type='submit'>Submit</button>
                 </form>
             </div>
+             <div className='map-wrap'>
+                 <MapContainer center={[16.806014, 96.128407]} zoom={13}>
+                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                     <Marker position={[16.806014, 96.128407]}>
+                         <Popup>Yup, this is where I live.</Popup>
+                     </Marker>
+              </MapContainer>
+               </div>
         </article>
         </section>
       </>
