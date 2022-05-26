@@ -15,12 +15,13 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: #7af2ff;
+    color: #8f2323;
   }
 }
 
 @for $i from 1 through 35 {
   ._#{$i} {
     animation-delay: #{$i / 10}s;
+    transition: 1s;
   }
 }

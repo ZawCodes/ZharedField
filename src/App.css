@@ -14,3 +14,6 @@ body {
   color: white;
   background: #0a4e59;
 }
+.d-flex {
+  display: flex;
+}

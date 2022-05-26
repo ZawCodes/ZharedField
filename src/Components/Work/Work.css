@@ -5,9 +5,12 @@
 }
 .work-section > h3 {
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     position: relative;
     border-bottom: 2px solid #33e1ff;
+}
+.work-section h2 {
+    font-size: 40px;
 }
 .exp-tree {
     margin: 5rem 0;

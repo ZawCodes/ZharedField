@@ -43,11 +43,11 @@ const Work = () => {
                 </div>
                 <div className='div2'>
                   <h4>2018 November - Base Technology Field Study</h4>
-                  Web Crawling the local News Websites and store them in a seperate file using Python.
+                  Web Crawling the local News Websites and storing them in a seperate file using Python.
                 </div>
               </div>
             </article>
-            <h3>Projects</h3>
+            <h2>Projects</h2>
             <article className='project-article'>
               <p>
               While working at the Amdon group, I've helped build and maintained some of the existing projects as well as the new ones. Here I'll be picking three main projects that I've had the pleasure of developing along with my senior colleagues.

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header/Header';
 import './Main.css';
-import TagCloud from 'TagCloud';
+// import TagCloud from 'TagCloud';
 import AnimatedLetters from '../AnimatedLetters'
 
 const Main = () => {

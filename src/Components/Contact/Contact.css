@@ -1,0 +1,47 @@
+.contact-section {
+    height: 100vh;
+    padding: 5% 10%;
+}
+.contact-section > h3 {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    border-bottom: 2px solid #33e1ff;
+}
+.contact-article {
+    margin-top: 3rem;
+}
+.contact-input {
+    width: 100%;
+    border-radius: 4px;
+    background: #69A7B1;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.contact-input input {
+    height: 44px;
+}
+.contact-input textarea {
+    height: auto;
+}
+.contact-input::placeholder {
+    color: white;
+}
+.contact-input:not(:last-child) {
+    margin-right: 22px;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.contact-btn {
+    height: 44px;
+    background: #68a7b1;
+    width: 200px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
