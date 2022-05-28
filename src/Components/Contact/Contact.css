@@ -1,6 +1,7 @@
 .contact-section {
     height: 100vh;
     padding: 5% 10%;
+    background: #0c5d6b;
 }
 .contact-section > h3 {
     color: white;

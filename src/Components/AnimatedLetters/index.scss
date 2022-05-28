@@ -1,7 +1,7 @@
 .text-animate {
   display: inline-block;
   opacity: 0;
-  animation: fadeInDown;
+  animation: bounceIn;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -22,6 +22,6 @@
 @for $i from 1 through 35 {
   ._#{$i} {
     animation-delay: #{$i / 10}s;
-    transition: 1s;
+    transition: 0.5s;
   }
 }

@@ -17,11 +17,9 @@ const About = () => {
                   I'm a 24 y/o junior web developer as well as an amateur artist.
                    I've been working as a full-time front end developer at <span className="amdon-group">the Amdon group</span> since I graduated my university in 2019, 
                    December with a Bachelor's degree in Software Engineering.
-                    I'm enthusiastic about creating visually pleasing stuffs whether they maybe an art or a web application.
-                     Being creative with the ideas is the easy part of a process.
+                   I'm a natural born creator and I like to create many things including websites, arts, stories etc.
+                     Being creative with the ideas is the easy part of a process for me.
                       And the difficult part is where you actually bring those ideas into reality.
-                        This is the step where a lot of juniors fail. 
-                        And below is my approach in tackling this problem.
               </p>
                 </div>
                 <div className='right-div'>
@@ -41,8 +39,9 @@ const About = () => {
               </div>
               <div className='right-div'>
              <p>
-             <span className='tab'></span>As an artist, I tend to take inspirations from different places and try to make them my own. Building a website is a lot similiar to making an art piece.
-               When you've mastered to gather, combine and recreate the stuff you want, you can do anything.
+             <span className='tab'></span>As an artist, I tend to take inspirations from different places and try to create something new. Building a website is a lot similiar to making an art piece.
+               When you've mastered to gather, combine and recreate the stuff you want, you can do almost anything. 
+               I also like to play video games, watch anime and movies in my free time.
              </p>
               </div>
             </article>

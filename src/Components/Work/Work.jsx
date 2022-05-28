@@ -2,9 +2,9 @@ import React from 'react'
 import './Work.css'
 import circle from '../assets/images/circle.svg';
 import line from '../assets/images/line.svg';
-import classwerkz from '../assets/images/classwerkz.png';
-import nodma from '../assets/images/nodma.png';
-import stemwerkz from '../assets/images/stemwerkz.png';
+// import classwerkz from '../assets/images/classwerkz.png';
+// import nodma from '../assets/images/nodma.png';
+// import stemwerkz from '../assets/images/stemwerkz.png';
 
 const Work = () => {
   return (
@@ -15,7 +15,7 @@ const Work = () => {
               <div className='year-00'>
                 <div className='div0'></div>
                 <div className='div1'>
-                  <img src={circle}/>
+                  <img style={{width: '30%'}} src={circle}/>
                   <img src={line}/>
                 </div>
                 <div className='div2'>
@@ -29,7 +29,7 @@ const Work = () => {
                 Developed a web application for checking exam result status using Spring boot and thymeleaf.
                 </div>
                 <div className='div1'>
-                  <img src={circle}/>
+                  <img style={{width: '30%'}} src={circle}/>
                   <img src={line}/>
                 </div>
                 <div className='div2'>
@@ -38,7 +38,7 @@ const Work = () => {
               <div className='year-02'>
                 <div className='div0'></div>
                 <div className='div1'>
-                  <img src={circle}/>
+                  <img style={{width: '30%'}} src={circle}/>
                   <img style={{visibility: 'hidden'}} src={line}/>
                 </div>
                 <div className='div2'>
@@ -47,25 +47,15 @@ const Work = () => {
                 </div>
               </div>
             </article>
-            <h2>Projects</h2>
-            <article className='project-article'>
-              <p>
-              While working at the Amdon group, I've helped build and maintained some of the existing projects as well as the new ones. Here I'll be picking three main projects that I've had the pleasure of developing along with my senior colleagues.
-              </p>
-              <div className='showcase'>
-                <div className='project1'>
-                  <img src={classwerkz}/>
-                  <div id='classwerkz'>Classwerkz</div>
-                </div>
-                <div className='project2'>
-                  <img src={nodma}/>
-                  <div id='nodma'>Nod<span>ma</span></div>
-                </div>
-                <div className='project3'>
-                  <img src={stemwerkz}/>
-                  <div id='stemwerkz'>Stemwerkz</div>
-                </div>
-              </div>
+            <h2>My Responsibilities</h2>
+            <article className='res-article'>
+              <p style={{marginBottom:"12px"}}>My main responsibilites as a front end developer at the Werkz Technology, which is the Yangon Branch of the Amdon Group, includes</p>
+              <ul>
+                <li>Maintaining the existing legacy web applications and fixing or upgrading whenever necessary.</li>
+                <li>Functionality testing of the web applications both manually and automated.</li>
+                <li>Building fully responsive web applications for new projects either with or without other colleagues.</li>
+                <li>Delivering the assigned tasks under deadlines.</li>
+              </ul>
             </article>
         </section>
     </>

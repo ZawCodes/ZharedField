@@ -9,11 +9,12 @@
     position: relative;
     border-bottom: 2px solid #33e1ff;
 }
+
 .work-section h2 {
     font-size: 40px;
 }
 .exp-tree {
-    margin: 5rem 0;
+    margin: 3rem;
 }
 .year-00 , .year-01, .year-02 {
     display: flex;
@@ -46,7 +47,7 @@
 .showcase > div:not(:last-child) {
     margin-right: 20px;
 }
-.project-article {
+.res-article {
     margin-top: 3rem;
 }
 #classwerkz {

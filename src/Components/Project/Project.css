@@ -1,0 +1,37 @@
+.project-section {
+    height: 100vh;
+    padding: 5% 10%;
+}
+.project-section > h3 {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    border-bottom: 2px solid #33e1ff;
+}
+.proj {
+    display: flex;
+    margin-top: 3rem;
+}
+.project-article {
+    margin-top: 3rem;
+}
+.project-article .img-div {
+    width: 25%;
+}
+.img-div > img {
+    max-width: 300px;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 15%) 10px 8px 3.2px;
+}
+.project-article .desc-div {
+    width: 75%;
+    padding-left: 5rem;
+}
+.desc-div > h4 {
+    margin-bottom: 2rem;
+}
+.proj-wrap {
+    margin-top: 2rem;
+    overflow: auto;
+    height: 60vh;
+}

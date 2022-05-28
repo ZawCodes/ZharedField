@@ -46,7 +46,7 @@
 .main-container .left-div > p {
     padding: 40px;
     opacity: 0;
-    animation: fadeInDown;
+    animation: fadeIn;
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
