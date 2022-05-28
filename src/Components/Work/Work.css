@@ -29,8 +29,9 @@
     justify-content: center;
     align-items: center;
 }
-.div1 > img {
+.line-svg {
     width: min-content;
+    height: -webkit-fill-available;
 }
 .showcase {
     overflow-x: auto;
@@ -43,6 +44,9 @@
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+}
+.circle-svg {
+    width: 30%;
 }
 .showcase > div:not(:last-child) {
     margin-right: 20px;
@@ -61,4 +65,33 @@
 }
 #stemwerkz {
     color : #B8A02B;
+}
+@media only screen and (max-width: 1024px) {
+    .work-section > h3 {
+        font-size: 50px;
+    }
+    .circle-svg {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .work-section > h3 {
+        font-size: 40px;
+    }
+    .circle-svg {
+        width: 100%;
+    }
+    .exp-tree {
+        margin: 3rem 0;
+        font-size: 14px;
+    }
+    .work-section h2 {
+        font-size: 30px;
+    }
+    .res-article {
+        font-size: 14px;
+    }
+    .div1 {
+        margin: 0 10px;
+    }
 }

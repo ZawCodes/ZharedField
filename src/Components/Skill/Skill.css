@@ -1,5 +1,5 @@
 .skill-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 5% 10%;
 }
@@ -16,6 +16,9 @@
 .skill-section h2 {
     color: white;
     font-size: 40px;
+}
+.circle-svg {
+    width: 30%;
 }
 .skill-list {
     list-style-type: none;
@@ -60,4 +63,26 @@
 }
 .education-article > div:not(:last-child) {
     margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1024px) {
+    .skill-section > h3 {
+        font-size: 50px;
+    }
+    .circle-svg {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .skill-section > h3 {
+        font-size: 40px;
+    }
+    .skill-list li, .code-box, .education-article {
+        font-size: 14px;
+    }
+    .skill-section h2 {
+        font-size: 30px;
+    }
+    .uit-img, .ncc-img {
+        height: 40px;
+    }
 }

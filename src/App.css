@@ -17,3 +17,8 @@ body {
 .d-flex {
   display: flex;
 }
+@media only screen and (max-width: 1024px) {
+  section {
+    height: fit-content;
+  }
+}

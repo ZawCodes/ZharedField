@@ -35,3 +35,23 @@
     overflow: auto;
     height: 60vh;
 }
+@media only screen and (max-width: 1024px) {
+    .project-section > h3 {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .project-section > h3 {
+        font-size: 40px;
+    }
+    .project-article .desc-div {
+        width: 65%;
+        padding-left: 1rem;
+    }
+    .project-article .img-div {
+        width: 35%;
+    }
+    .project-section {
+        font-size: 14px;
+    }
+}

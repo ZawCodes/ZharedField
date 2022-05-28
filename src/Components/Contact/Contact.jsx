@@ -41,6 +41,14 @@ const Contact = () => {
               </MapContainer>
                </div>
         </article>
+        <footer>
+        <div> <h1 className='text-logo'>
+                zha<span>red</span>
+            </h1></div>
+            <div>
+            © 2022 designed and built by Zaw Htet Aung
+            </div>
+        </footer>
         </section>
       </>
   )

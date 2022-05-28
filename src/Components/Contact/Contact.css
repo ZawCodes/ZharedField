@@ -1,5 +1,5 @@
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 5% 10%;
     background: #0c5d6b;
 }
@@ -60,3 +60,30 @@
   .map-wrap {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
+  .contact-section footer {
+    margin-top: 10rem;
+    text-align: center;
+  }
+  @media only screen and (max-width: 1024px) {
+    .contact-section > h3 {
+        font-size: 50px;
+    }
+}
+  @media only screen and (max-width: 600px) {
+    .contact-section > h3 {
+        font-size: 40px;
+    }
+    .contact-section {
+        font-size: 14px;
+    }
+    .contact-article {
+        flex-direction: column;
+    }
+    .contact-form-container, .map-wrap {
+        width: 100%;
+    }
+    .map-wrap {
+        height: 300px;
+        margin-top: 2rem;
+    }
+}

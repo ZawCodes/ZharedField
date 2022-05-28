@@ -26,3 +26,19 @@
 .header-wrap li:not(:last-child) { 
     margin-right: 22px;
  }
+ @media only screen and (max-width: 786px) {
+     .text-logo {
+         font-size: 28px;
+     }
+     .header-wrap nav > ul {
+         font-size: 16px;
+     }
+ }
+ @media only screen and (max-width: 450px) {
+     .text-logo {
+         font-size: 22px;
+     }
+     .header-wrap nav > ul {
+         font-size: 14px;
+     }
+ }

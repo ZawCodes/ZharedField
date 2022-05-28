@@ -15,8 +15,8 @@ const Work = () => {
               <div className='year-00'>
                 <div className='div0'></div>
                 <div className='div1'>
-                  <img style={{width: '30%'}} src={circle}/>
-                  <img src={line}/>
+                  <img className="circle-svg" src={circle}/>
+                  <img className="line-svg" src={line}/>
                 </div>
                 <div className='div2'>
                   <h4>2019 October to Current - The Amdon Consulting</h4>
@@ -29,8 +29,8 @@ const Work = () => {
                 Developed a web application for checking exam result status using Spring boot and thymeleaf.
                 </div>
                 <div className='div1'>
-                  <img style={{width: '30%'}} src={circle}/>
-                  <img src={line}/>
+                  <img className="circle-svg" src={circle}/>
+                  <img className="line-svg" src={line}/>
                 </div>
                 <div className='div2'>
                 </div>
@@ -38,8 +38,8 @@ const Work = () => {
               <div className='year-02'>
                 <div className='div0'></div>
                 <div className='div1'>
-                  <img style={{width: '30%'}} src={circle}/>
-                  <img style={{visibility: 'hidden'}} src={line}/>
+                  <img className="circle-svg" src={circle}/>
+                  <img className="line-svg" style={{visibility: 'hidden'}} src={line}/>
                 </div>
                 <div className='div2'>
                   <h4>2018 November - Base Technology Field Study</h4>

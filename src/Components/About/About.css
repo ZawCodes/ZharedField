@@ -1,6 +1,6 @@
 .about-section {
     background: #0c5d6b;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 5% 10%;
 }
@@ -48,6 +48,8 @@
 .right-div .me-pic::after {
     content: '"When I had long hair"';
     position: absolute;
+    text-align: center;
+    width: inherit;
     color: white;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -75,6 +77,7 @@
 .second-article {
     display: flex;
     margin-top: 10rem;
+    align-items: center;
 }
 .ref-pic {
     width: 100px;
@@ -130,11 +133,14 @@
     color: white;
     font-size: 10px;
 }
+.invi-box {
+    height: 200px;
+}
 .to {
     position: absolute;
     color: white;
     font-size: 10px;
-    bottom: -100px;
+    bottom: 0px;
     left: 250px;
 }
 /* .about-section p::first-letter {
@@ -150,4 +156,88 @@
 }
 .amdon-group {
     color: #ff6476;
+}
+@media only screen and (max-width: 1024px) {
+    .about-section > h3 {
+        font-size: 50px;
+    }
+    .first-article {
+        flex-direction: column;
+    }
+    .right-div > div > img {
+        width: 150px;
+    }
+    .right-div .me-pic {
+        width: 150px;
+        height: 150px;
+    }
+    .about-section .first-article .right-div {
+        margin-top: 1rem;
+    }
+    .about-section {
+        padding: 5% 8%;
+    }
+    .second-article {
+        margin-top: 5rem;
+        flex-direction: column-reverse;
+    }
+    .second-article .left-div {
+        margin-top: 5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .right-div > div > img {
+        width: 110px;
+    }
+    .right-div .me-pic {
+        width: 110px;
+        height: 110px;
+    }
+    .right-div .me-pic::after {
+        font-size: 10px;
+    }
+    .about-section > h3 {
+        font-size: 40px;
+    }
+    .about-section{
+        padding: 10% 8%;
+    }
+    .first-article p {
+        font-size: 14px;
+    }
+    .second-article p {
+        font-size: 14px;
+    }
+    .ref-pic {
+        width: 80px;
+    }
+    .ref-pic:hover {
+        transform: scale(250%) translateX(0px);
+        z-index: 2;
+    }
+    .refTwo-pic {
+        width: 120px;
+    }
+    .refTwo-pic:hover {
+        transform: scale(250%) translateX(-20px);
+    }
+    .own-pic {
+        width: 150px;
+    }
+    .own-pic:hover {
+        transform: scale(150%) translateX(0px);
+        z-index: 2;
+    }
+    .to {
+        left: 200px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .right-div > div > img {
+        width: 80px;
+    }
+    .right-div .me-pic {
+        width: 80px;
+        height: 80px;
+    }
 }

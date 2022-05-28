@@ -31,11 +31,13 @@ const About = () => {
             </article>
             <article className='second-article'>
               <div className='left-div'>
+                <div className='invi-box'>
                 <span className='from'>From these</span>
                 <img src={refPic} className='ref-pic'/>
                 <img src={refPictwo} className='refTwo-pic'/>
                 <img src={ownPic} className='own-pic'/>
                 <span className='to'>To this</span>
+                </div>
               </div>
               <div className='right-div'>
              <p>
