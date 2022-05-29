@@ -1,9 +1,14 @@
-import React, { useState, useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 import './Skill.css';
 import UiT from "../assets/images/UIT-Logo-big.png";
 import NCC from "../assets/images/ncc_edu.png";
+import revealFunction from '../assets/RevealFunction';
 
 const Skill = () => {
+  useEffect(()=>{
+    window.addEventListener('scroll', revealFunction)
+  },[])
+
     const skillNames = {
         frontEnd: 'frontend',
         uiux: 'uiux',
@@ -38,11 +43,11 @@ const Skill = () => {
       }, frontendSkills);
   return (
         <>
-            <section className='skill-section'>
-                <h3>Skill</h3>
+            <section className='skill-section reveal'>
+                <h3 className='reveal'>Skill</h3>
                 <article className='skill-list-article'>
                     <div className='skill-wrap'>
-                        <div className='left-div'>
+                        <div className='left-div reveal'>
                             <ul className='skill-list'>
                                 <li onClick={() => dispatch({ type: 'frontend', index: 0 })}>Front end Development</li>
                                 <li onClick={() => dispatch({ type: 'uiux', index: 1 })}>Ui/Ux Design</li>
@@ -52,24 +57,24 @@ const Skill = () => {
                                 <li onClick={() => dispatch({ type: 'problemsolve', index: 5 })}>Problem Solving</li>
                             </ul>
                         </div>
-                        <div className='right-div'>
+                        <div className='right-div reveal'>
                             <div className='code-box'>
                                 {skills}
                             </div>
                         </div>
                     </div>
                 </article>
-                <h2>Education</h2>
+                <h2 className='reveal'>Education</h2>
                 <article className='education-article'>
-                    <div>
-                        <div className='flex-column'>
+                    <div className='reveal'>
+                        <div className='flex-column reveal'>
                         <p>2015 - 2019 =&gt; University of Information Technology</p>
                         <p>Bachelor's Degree in Software Engineering</p>
                         </div>
                         <img className='uit-img' src={UiT}/>
                     </div>
-                    <div>
-                        <div className='flex-column'>
+                    <div className='reveal'>
+                        <div className='flex-column reveal'>
                         <p>2014 - 2016 =&gt; NCC Education</p>
                         <p>Level 4 Diploma in Computing</p>
                         </div>

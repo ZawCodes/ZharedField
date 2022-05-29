@@ -1,16 +1,25 @@
 .about-section {
-    background: #0c5d6b;
+    color: #002b32;
+    background: #47adb2;
     min-height: 100vh;
     width: 100%;
     padding: 5% 10%;
+    opacity: 0;
+    transition: all 2s ease;
 }
-.about-section > h3 {
-    color: white;
+.about-section h3{
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #33e1ff;
+    border-bottom: 2px solid #002b32;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }
-.about-section::before {
+.active{
+    transform: translate(0px, 0px) !important;
+    opacity: 1 !important;
+}
+/* .about-section::before {
     content: 'More';
     position: absolute;
     color: white;
@@ -21,15 +30,18 @@
     font-weight: bold;
     font-size: 20px;
 
-}
+} */
 .first-article {
-    color: white;
     display: flex;
     align-items: center;
     margin-top: 5rem;
 }
 .first-article .left-div {
     width: 70%;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
+    animation-delay: 0.2s;
 }
 .first-article .right-div {
     width: 30%;
@@ -44,6 +56,14 @@
     overflow: hidden;
     width: 200px;
     height: 200px;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 1s ease;
+    animation-delay: 0.2s;
+}
+.me-pic:hover {
+    border-radius: 0;
+    border: 5px solid #004652;
 }
 .right-div .me-pic::after {
     content: '"When I had long hair"';
@@ -71,7 +91,7 @@
     transition: 1s;
 }
 .first-article .left-div > span {
-    color: #b81458;
+    /* color: #b81458; */
 }
 
 .second-article {
@@ -121,16 +141,23 @@
 .second-article .left-div {
     width: 40%;
     position: relative;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 1s ease;
+    animation-delay: 0.2s;
 }
 .second-article .right-div {
-    color: white;
     width: 60%;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 1s ease;
+    animation-delay: 0.2s;
 }
 .from {
     position: absolute;
     top: -25px;
     left: -25px;
-    color: white;
+
     font-size: 10px;
 }
 .invi-box {
@@ -138,7 +165,7 @@
 }
 .to {
     position: absolute;
-    color: white;
+
     font-size: 10px;
     bottom: 0px;
     left: 250px;
@@ -155,7 +182,7 @@
     align-items: center;
 }
 .amdon-group {
-    color: #ff6476;
+    /* color: #ff6476; */
 }
 @media only screen and (max-width: 1024px) {
     .about-section > h3 {

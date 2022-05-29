@@ -1,13 +1,13 @@
 .contact-section {
     min-height: 100vh;
     padding: 5% 10%;
-    background: #0c5d6b;
+    color: #002b32;
+    background: #47adb2;
 }
 .contact-section > h3 {
-    color: white;
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #33e1ff;
+    border-bottom: 2px solid #002b32;
 }
 .contact-article {
     margin-top: 3rem;
@@ -17,11 +17,10 @@
 .contact-input {
     width: 100%;
     border-radius: 4px;
-    background: #69A7B1;
+    background: #004652;
     border: none;
     padding: 1em;
     font-size: 1em;
-    color: white;
     font-family: "Poppins", sans-serif;
 }
 .contact-input input {
@@ -31,7 +30,7 @@
     height: auto;
 }
 .contact-input::placeholder {
-    color: white;
+    color: #47adb2;
 }
 .contact-input:not(:last-child) {
     margin-right: 22px;
@@ -41,10 +40,10 @@
 }
 .contact-btn {
     height: 44px;
-    background: #68a7b1;
+    background: #004652;
     width: 200px;
     font-size: 1em;
-    color: white;
+    color: #47adb2;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -86,4 +85,11 @@
         height: 300px;
         margin-top: 2rem;
     }
+}
+
+/* animation */ 
+.contact-section, .contact-section > h3, .contact-input, .contact-btn, .map-wrap{
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }

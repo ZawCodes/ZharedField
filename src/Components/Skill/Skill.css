@@ -1,21 +1,28 @@
 .skill-section {
+    color: #47adb2;
     min-height: 100vh;
     width: 100%;
     padding: 5% 10%;
+    opacity: 0;
+    transition: all 2s ease;
 }
 .skill-wrap {
     display: flex;
 }
 .skill-section > h3 {
-    color: white;
     font-size: 60px;
     position: relative;
     margin-top: 3rem;
     border-bottom: 2px solid #33e1ff;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 .skill-section h2 {
-    color: white;
     font-size: 40px;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 .circle-svg {
     width: 30%;
@@ -27,12 +34,16 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-.skill-wrap .left-div, .right-div {
+.skill-wrap .left-div, .skill-wrap .right-div {
     width: 50%;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
+    animation-delay: 0.2s;
 }
 .code-box {
     height: 100%;
-    background: #558087;
+    background: #004652;
     font-family: 'Courier Prime', monospace;
     padding: 16px;
     border-radius: 4px;
@@ -46,9 +57,12 @@
 .education-article div{
     display: flex;
     justify-content: space-between;
-    background: #558087;
+    background: #004652;
     padding: 10px;
     border-radius: 10px;
+    opacity: 0;
+    transition: all 2s ease;
+    animation-delay: 0.2s;
 }
 .uit-img {
     height: 60px;

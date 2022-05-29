@@ -1,13 +1,19 @@
 .work-section {
     min-height: 100vh;
     padding: 5% 10%;
-    background: #0c5d6b;
+    color: #002b32;
+    background: #47adb2;
+    opacity: 0;
+    transition: all 2s ease;
 }
 .work-section > h3 {
-    color: white;
+
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #33e1ff;
+    border-bottom: 2px solid #002b32;
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 .work-section h2 {
@@ -40,7 +46,7 @@
     margin-top: 3rem;
 }
 .project1, .project2, .project3 {
-    background: white;
+
     padding: 10px;
     border-radius: 20px;
     text-align: center;
@@ -94,4 +100,12 @@
     .div1 {
         margin: 0 10px;
     }
+}
+
+/* animation */
+
+.circle-svg, .line-svg, .div0, .div2, .work-section h2, .res-article {
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 2s ease;
 }

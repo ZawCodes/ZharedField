@@ -4,7 +4,7 @@
     align-items: center;
     height: 70px;
     padding: 10px 40px;
-    background: #0a4e59;
+    background: #002b32;
     color: white;
     z-index: 1;
     position: fixed;
@@ -19,6 +19,7 @@
     color: #ff4040;
 }
 .header-wrap nav > ul {
+    color: #4cb9be;
     list-style-type: none;
     display: flex;
     font-size: 18px;
