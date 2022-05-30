@@ -1,10 +1,15 @@
-import React, { useEffect, useReducer } from 'react'
+import React, { useState, useEffect, useReducer } from 'react'
 import './Skill.css';
 import UiT from "../assets/images/UIT-Logo-big.png";
 import NCC from "../assets/images/ncc_edu.png";
 import revealFunction from '../assets/RevealFunction';
+import AnimatedLetters from '../AnimatedLetters'
 
 const Skill = () => {
+
+  const [letterClass, setLetterClass] = useState('text-animate-hover')
+  const skillText = ['S','k','i','l','l'];
+
   useEffect(()=>{
     window.addEventListener('scroll', revealFunction)
   },[])
@@ -44,7 +49,13 @@ const Skill = () => {
   return (
         <>
             <section className='skill-section reveal'>
-                <h3 className='reveal'>Skill</h3>
+                <h3 className='reveal'>
+                <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={skillText}
+                            idx={1}
+                            />
+                </h3>
                 <article className='skill-list-article'>
                     <div className='skill-wrap'>
                         <div className='left-div reveal'>
@@ -68,14 +79,14 @@ const Skill = () => {
                 <article className='education-article'>
                     <div className='reveal'>
                         <div className='flex-column reveal'>
-                        <p>2015 - 2019 =&gt; University of Information Technology</p>
+                        <p>2015 - 2019 =&gt; <a href='https://www.uit.edu.mm/' className='uit-link'>University of Information Technology</a></p>
                         <p>Bachelor's Degree in Software Engineering</p>
                         </div>
                         <img className='uit-img' src={UiT}/>
                     </div>
                     <div className='reveal'>
                         <div className='flex-column reveal'>
-                        <p>2014 - 2016 =&gt; NCC Education</p>
+                        <p>2014 - 2016 =&gt; <a href='https://www.nccedu.com/qualifications/computing/ncc-education-level-4-diploma-in-computing-l4dc/' className='uit-link'>NCC Education</a></p>
                         <p>Level 4 Diploma in Computing</p>
                         </div>
                         <img className='ncc-img' src={NCC}/>

@@ -50,6 +50,17 @@ const Main = () => {
                     {/* <div className='right-div tagcloud'>
                     </div> */}
                 </main>
+                <div className='logo-wrap'>
+                   <div className='link-logo'>
+                   <i className='fab fa-github'></i>
+                   </div>
+                   <div className='link-logo'>
+                   <i className='fab fa-facebook-f'></i>
+                   </div>
+                   <div className='link-logo'>
+                   <i className='fab fa-linkedin-in'></i>
+                   </div>
+                </div>
             </section>
         </>
     )

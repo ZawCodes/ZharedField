@@ -62,11 +62,36 @@
     /* animation-delay: 2s; */
     animation-fill-mode: forwards;
 }
+.link-logo {
+    padding: 10px;
+    background: #f1c556;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.link-logo:hover {
+    color: #f7f0de;
+    transform: rotate(-15deg);
+}
+.logo-wrap {
+    display: flex;
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+}
+.link-logo:not(:last-child) {
+    margin-right: 12px;
+}
 .cv-download {
     font-size: 16px;
     height: 40px;
     width: 300px;
-    background: #8f2323;
+    background: #ff7121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +102,10 @@
     color: white;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.15s;
+}
+.cv-download:hover {
+    font-size: 18px;
 }
 @media only screen and (max-width: 1150px) {
     .main-container h3 {
@@ -107,6 +136,15 @@
         margin-bottom: 6px;
         margin-top: 100px;
     }
+    .link-logo {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .logo-wrap {
+        bottom: 2rem;
+        right: 2rem;
+    }
 }
 @media only screen and (max-width: 450px) {
     .main-container h3 {
@@ -114,9 +152,7 @@
         margin-bottom: 6px;
         margin-top: 25vh;
     }
-    /* .main-container .left-div > p {
-        font-size: 12px;
-    } */
+
 }
 @media only screen and (max-width: 400px) {
     .main-container h3 {
@@ -128,4 +164,12 @@
     .main-container .left-div {
         width: 80%;
     }
+}
+@media only screen and (max-height: 550px) {
+    .logo-wrap {
+       position: unset;
+       justify-content: flex-end;
+       margin: 2rem 2rem 0 0;
+    }
+
 }

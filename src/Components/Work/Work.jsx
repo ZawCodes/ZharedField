@@ -1,10 +1,15 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Work.css'
 import circle from '../assets/images/circle.svg';
 import line from '../assets/images/line.svg';
 import revealFunction from '../assets/RevealFunction';
+import AnimatedLetters from '../AnimatedLetters'
 
 const Work = () => {
+
+  const [letterClass, setLetterClass] = useState('text-animate-hover')
+  const workText = ['W','o','r','k',' ','E','x','p','e','r','i','e','n','c','e'];
+
   useEffect(()=>{
     window.addEventListener('scroll', revealFunction)
   },[])
@@ -12,7 +17,13 @@ const Work = () => {
   return (
     <>
         <section className='work-section reveal'>
-          <h3 className='reveal'>Work Experience</h3>
+          <h3 className='reveal'>
+          <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={workText}
+                            idx={1}
+                            />
+          </h3>
             <article className='exp-tree'>
               <div className='year-00'>
                 <div className='div0 reveal'></div>

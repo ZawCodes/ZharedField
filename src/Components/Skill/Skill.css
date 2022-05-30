@@ -1,5 +1,4 @@
 .skill-section {
-    color: #47adb2;
     min-height: 100vh;
     width: 100%;
     padding: 5% 10%;
@@ -13,7 +12,7 @@
     font-size: 60px;
     position: relative;
     margin-top: 3rem;
-    border-bottom: 2px solid #33e1ff;
+    border-bottom: 2px solid #f1c556;
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 2s ease;
@@ -43,26 +42,52 @@
 }
 .code-box {
     height: 100%;
-    background: #004652;
+    border: 3px solid #f1c556;
+    background: #fbe5ad;
     font-family: 'Courier Prime', monospace;
     padding: 16px;
     border-radius: 4px;
 }
 .skill-list li {
+    width: fit-content;
     cursor: pointer;
+}
+.skill-list li:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
 }
 .skill-list li:not(:last-child) {
     margin-bottom: 1.2em;
 }
+.skill-list li, .uit-link {
+    background-image: linear-gradient(rgb(241 197 86), #f1c556);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+.uit-link {
+    text-decoration: none;
+    color: #ff7121;
+}
+.uit-link:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
 .education-article div{
     display: flex;
     justify-content: space-between;
-    background: #004652;
+    background: #fbe5ad;
     padding: 10px;
     border-radius: 10px;
     opacity: 0;
     transition: all 2s ease;
     animation-delay: 0.2s;
+}
+.education-article > div {
+    border: 1px solid #f1c556;
 }
 .uit-img {
     height: 60px;

@@ -1,10 +1,15 @@
-import React,{ useRef, useEffect }  from 'react'
+import React,{ useRef, useEffect, useState }  from 'react'
 import './Contact.css'
 import emailjs from "emailjs-com";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import revealFunction from '../assets/RevealFunction';
+import AnimatedLetters from '../AnimatedLetters'
 
 const Contact = () => {
+
+    const [letterClass, setLetterClass] = useState('text-animate-hover')
+    const contactText = ['C','o','n','t','a','c','t',' ','M','e'];
+
     useEffect(()=>{
         window.addEventListener('scroll', revealFunction)
       },[])
@@ -22,7 +27,13 @@ const Contact = () => {
   return (
       <>
         <section className='contact-section reveal'>
-            <h3 className='reveal'>Contact me</h3>
+            <h3 className='reveal'>
+            <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={contactText}
+                            idx={1}
+                            />
+            </h3>
         <article className='contact-article'>
             <div className='contact-form-container'>
                 <form ref={form} onSubmit={sendEmail}>

@@ -9,7 +9,7 @@ import revealFunction from '../assets/RevealFunction'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate-hover')
-  const welcomeText = ['A','b','o','u','t',' ','M','e'];
+  const aboutText = ['A','b','o','u','t',' ','M','e'];
 
   useEffect(()=>{
     window.addEventListener('scroll', revealFunction)
@@ -21,7 +21,7 @@ const About = () => {
             <h3 className='reveal'>
             <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={welcomeText}
+                            strArray={aboutText}
                             idx={1}
                             />
             </h3>
@@ -30,11 +30,9 @@ const About = () => {
               <p>
               <span className='tab'></span>My real name is Zaw Htet Aung.
                   I'm a 24 y/o junior web developer as well as an amateur artist.
-                   I've been working as a full-time front end developer at <span className="amdon-group">the Amdon group</span> since I graduated my university in 2019, 
+                   I've been working as a full-time front end developer at <a href='https://www.amdon.com/' className="amdon-group">the Amdon group</a> since I graduated my university in 2019, 
                    December with a Bachelor's degree in Software Engineering.
                    I'm a natural born creator and I like to create many things including websites, arts, stories etc.
-                     Being creative with the ideas is the easy part of a process for me.
-                      And the difficult part is where you actually bring those ideas into reality.
               </p>
                 </div>
                 <div className='right-div'>

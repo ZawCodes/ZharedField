@@ -1,13 +1,13 @@
 .contact-section {
     min-height: 100vh;
     padding: 5% 10%;
-    color: #002b32;
-    background: #47adb2;
+    color: #1d1603;
+    background: #f1c556;
 }
 .contact-section > h3 {
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #002b32;
+    border-bottom: 2px solid #f7f0de;
 }
 .contact-article {
     margin-top: 3rem;
@@ -17,7 +17,8 @@
 .contact-input {
     width: 100%;
     border-radius: 4px;
-    background: #004652;
+    /* border: 3px solid #f7f0de; */
+    background: #fbe5ad;
     border: none;
     padding: 1em;
     font-size: 1em;
@@ -30,7 +31,7 @@
     height: auto;
 }
 .contact-input::placeholder {
-    color: #47adb2;
+    color: #1d1603;
 }
 .contact-input:not(:last-child) {
     margin-right: 22px;
@@ -40,10 +41,11 @@
 }
 .contact-btn {
     height: 44px;
-    background: #004652;
+    border: 3px solid #f7f0de;
+    background: #fbe5ad;
     width: 200px;
     font-size: 1em;
-    color: #47adb2;
+    color: #1d1603;
     cursor: pointer;
     border-radius: 8px;
 }
