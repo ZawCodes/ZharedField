@@ -29,6 +29,7 @@ const Contact = () => {
               toastr.success('Message Sent!');
           }, (error) => {
               console.log(error.text);
+              toastr.error(error);
           });
     }
     const [name, setName] = useState('');

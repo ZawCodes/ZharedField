@@ -22,12 +22,12 @@ const Skill = () => {
         team: 'teamplay',
         problem: 'problemsolve'
     }
-    const frontendSkills = 'Javascript, Html, Css';
-    const uiuixSkills = 'Figma, Photoshop, Krita';
-    const agileSkills = 'Scrum, Agile';
-    const testingSkills = 'Unit testing, Integration testing';
-    const teamSkills = 'Team Communication, Supporting, Leadership';
-    const problemSkills = 'Creative, Quick thinking';
+    const frontendSkills = 'Javascript, Jquery, Typescript, Html, Css, Scss, Angular, Angularjs, Reactjs, Bootstrap, Git, Jasmine, Cypress';
+    const uiuixSkills = 'Sketch, Figma, Photoshop, Illustrator, Krita, Responsive web design';
+    const agileSkills = 'Waterfall, Agile, Scrum';
+    const testingSkills = 'Unit testing, Integration testing, Accceptance testing, Functional testing, Manual testing, Test Automation';
+    const teamSkills = 'Reliability, Communication, Supporting, Leadership';
+    const problemSkills = 'Creative, Quick thinking, Decision-making, Stress management, Time management';
     const [skills, dispatch] = useReducer((state, action) => {
         switch (action.type) {
           case skillNames.frontEnd:
@@ -62,7 +62,7 @@ const Skill = () => {
                             <ul className='skill-list'>
                                 <li onClick={() => dispatch({ type: 'frontend', index: 0 })}>Front end Development</li>
                                 <li onClick={() => dispatch({ type: 'uiux', index: 1 })}>Ui/Ux Design</li>
-                                <li onClick={() => dispatch({ type: 'agile', index: 2 })}>Agile workflow</li>
+                                <li onClick={() => dispatch({ type: 'agile', index: 2 })}>Software Development Lifecycles</li>
                                 <li onClick={() => dispatch({ type: 'testing', index: 3 })}>Software Testing</li>
                                 <li onClick={() => dispatch({ type: 'teamplay', index: 4 })}>Team Orientation</li>
                                 <li onClick={() => dispatch({ type: 'problemsolve', index: 5 })}>Problem Solving</li>

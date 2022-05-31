@@ -74,6 +74,8 @@
     border-radius: 10px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
+    text-decoration: none;
+    color: inherit;
 }
 .link-logo:hover {
     color: #f7f0de;

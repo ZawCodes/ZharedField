@@ -10,6 +10,10 @@
 .about-section p {
     text-align: justify;
 }
+.about-section h4 {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
 .about-section h3{
     font-size: 60px;
     position: relative;

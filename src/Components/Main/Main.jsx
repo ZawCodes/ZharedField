@@ -56,15 +56,15 @@ const Main = () => {
                     </div> */}
                 </main>
                 <div className='logo-wrap'>
-                   <div className='link-logo'>
+                   <a href='https://github.com/ZawHtetAung-Zhared' target='_blank' className='link-logo'>
                    <i className='fab fa-github'></i>
-                   </div>
-                   <div className='link-logo'>
+                   </a>
+                   <a href='https://www.facebook.com/Zhared.Field' target='_blank' className='link-logo'>
                    <i className='fab fa-facebook-f'></i>
-                   </div>
-                   <div className='link-logo'>
+                   </a>
+                   <a href='https://www.linkedin.com/in/zaw-htet-aung-zhared/' target='_blank' className='link-logo'>
                    <i className='fab fa-linkedin-in'></i>
-                   </div>
+                   </a>
                 </div>
             </section>
         </>

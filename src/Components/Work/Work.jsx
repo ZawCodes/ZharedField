@@ -39,7 +39,7 @@ const Work = () => {
               <div className='year-01'>
                 <div className='div0 reveal'>
                 <h4>2019 May to August - Dir Ace Technology Internship</h4>
-                Developed a web application for checking exam result status using Spring boot and thymeleaf.
+                Developed an exam result checker web application using Spring boot and thymeleaf. Wrote mockup web templates for local stock market system.
                 </div>
                 <div className='div1'>
                   <img className="circle-svg reveal" src={circle}/>
@@ -56,7 +56,7 @@ const Work = () => {
                 </div>
                 <div className='div2 reveal'>
                   <h4>2018 November - Base Technology Field Study</h4>
-                  Web Crawling the local News Websites and storing them in a seperate file using Python.
+                  Web Crawling local News Websites and storing them in seperate files using Python.
                 </div>
               </div>
             </article>
