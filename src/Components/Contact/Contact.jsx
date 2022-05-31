@@ -4,6 +4,8 @@ import emailjs from "emailjs-com";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import revealFunction from '../assets/RevealFunction';
 import AnimatedLetters from '../AnimatedLetters'
+import toastr from 'toastr'
+import 'toastr/build/toastr.min.css'
 
 const Contact = () => {
 
@@ -20,6 +22,11 @@ const Contact = () => {
         emailjs.sendForm('service_6a773nj', 'zharedPortfolio', form.current, '7sGVAijiNaicJFPx1')
           .then((result) => {
               console.log(result.text);
+              setName('');
+              setEmail('');
+              setSubject('');
+              setMessage('');
+              toastr.success('Message Sent!');
           }, (error) => {
               console.log(error.text);
           });
@@ -38,7 +45,7 @@ const Contact = () => {
         else {
             setFormEmpty(false)
         }
-        console.log('form state', formEmpty);
+        console.log('form inputs', name, email, subject, message);
     }, [name,email,subject,message])
     
   return (
@@ -56,11 +63,11 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <span>Feel free to send me a message to talk about work.</span>
                     <div className='d-flex mt-2 '>
-                        <input onChange={(e) => {setName(e.target.value)}} className='contact-input reveal' type="text" name="name" placeholder='Name' />
-                        <input onChange={(e) => {setEmail(e.target.value)}} className='contact-input reveal' type="email" name="email" placeholder='Your email' />
+                        <input onChange={(e) => {setName(e.target.value)}} className='contact-input reveal' type="text" value={name} name="name" placeholder='Name' />
+                        <input onChange={(e) => {setEmail(e.target.value)}} className='contact-input reveal' type="email" value={email} name="email" placeholder='Your email' />
                     </div>
-                    <input onChange={(e) => {setSubject(e.target.value)}} className='contact-input mt-2 reveal' type="text" name="subject" placeholder='Subject' />
-                    <textarea onChange={(e) => {setMessage(e.target.value)}} className='contact-input mt-2 reveal' rows="4" name="message" placeholder='Your message'></textarea>
+                    <input onChange={(e) => {setSubject(e.target.value)}} className='contact-input mt-2 reveal' type="text" value={subject} name="subject" placeholder='Subject' />
+                    <textarea onChange={(e) => {setMessage(e.target.value)}} className='contact-input mt-2 reveal' rows="4" value={message} name="message" placeholder='Your message'></textarea>
                     <button disabled={formEmpty} className='contact-btn mt-2 reveal' type='submit'>Submit</button>
                 </form>
             </div>

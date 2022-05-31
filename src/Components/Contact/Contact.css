@@ -34,6 +34,18 @@
 .contact-input::placeholder {
     color: #f1c556;
 }
+#toast-container > .toast-success {
+    background-color: #ff7121;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #toast-container > .toast-success:hover {
+    background-color: #c24f0c;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  
 .contact-input:focus {
     background: #977725;
     transition: background-color 0.15s linear;
@@ -59,6 +71,10 @@
     color: #1d1603;
     cursor: pointer;
     border-radius: 8px;
+}
+.contact-btn:focus {
+    background: #977725;
+    outline: none;
 }
 .contact-btn:disabled {
     cursor: not-allowed;
