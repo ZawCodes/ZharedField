@@ -28,7 +28,7 @@ const About = () => {
             <article className='first-article'>
                 <div className='left-div reveal'>
               <p>
-              <span className='tab'></span>My real name is Zaw Htet Aung.
+              <span className='tab'></span>My burmese name is Zaw Htet Aung.
                   I'm a 24 y/o junior web developer as well as an amateur artist.
                    I've been working as a full-time front end developer at <a href='https://www.amdon.com/' className="amdon-group">the Amdon group</a> since I graduated my university in 2019, 
                    December with a Bachelor's degree in Software Engineering.
@@ -56,7 +56,7 @@ const About = () => {
              <p>
              <span className='tab'></span>As an artist, I tend to take inspirations from different places and try to create something new. Building a website is a lot similiar to making an art piece.
                When you've mastered to gather, combine and recreate the stuff you want, you can do almost anything. 
-               I also like to play video games, watch anime and movies in my free time.
+               I enjoy playing video games, watch anime and movies in my free time.
              </p>
               </div>
             </article>

@@ -28,7 +28,7 @@ const Project = () => {
                  <p>Over the years, I've worked on several projects together with my colleagues. Here I'll be showing some of the projects I picked.</p>
                  <div className='proj-wrap reveal'>
                      {ProjApi.map((value, index) => {
-                         return <Card key={index} img={value.image} title={value.title} body={value.body} id={index}/>
+                         return <Card key={index} img={value.image} title={value.title} body={value.body} link={value.link} id={index}/>
                      })}
                  </div>
              </article>

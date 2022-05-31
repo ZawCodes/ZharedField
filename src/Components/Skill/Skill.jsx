@@ -64,7 +64,7 @@ const Skill = () => {
                                 <li onClick={() => dispatch({ type: 'uiux', index: 1 })}>Ui/Ux Design</li>
                                 <li onClick={() => dispatch({ type: 'agile', index: 2 })}>Agile workflow</li>
                                 <li onClick={() => dispatch({ type: 'testing', index: 3 })}>Software Testing</li>
-                                <li onClick={() => dispatch({ type: 'teamplay', index: 4 })}>Team play</li>
+                                <li onClick={() => dispatch({ type: 'teamplay', index: 4 })}>Team Orientation</li>
                                 <li onClick={() => dispatch({ type: 'problemsolve', index: 5 })}>Problem Solving</li>
                             </ul>
                         </div>

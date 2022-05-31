@@ -15,6 +15,7 @@
     justify-content: space-between;
 }
 .contact-input {
+    color: #1d1603;
     width: 100%;
     border-radius: 4px;
     /* border: 3px solid #f7f0de; */
@@ -31,7 +32,17 @@
     height: auto;
 }
 .contact-input::placeholder {
-    color: #1d1603;
+    color: #f1c556;
+}
+.contact-input:focus {
+    background: #977725;
+    transition: background-color 0.15s linear;
+    border: 1px solid #f7f0de;
+    outline: none;
+}
+.contact-input:hover, .contact-btn:hover {
+    background: #f7f0de;
+    transition: background-color 0.15s linear;
 }
 .contact-input:not(:last-child) {
     margin-right: 22px;
@@ -48,6 +59,9 @@
     color: #1d1603;
     cursor: pointer;
     border-radius: 8px;
+}
+.contact-btn:disabled {
+    cursor: not-allowed;
 }
 .leaflet-container {
     position: relative;
@@ -93,5 +107,5 @@
 .contact-section, .contact-section > h3, .contact-input, .contact-btn, .map-wrap{
     transform: translate(0px, 20px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: opacity 2s ease;
 }

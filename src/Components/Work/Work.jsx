@@ -62,7 +62,7 @@ const Work = () => {
             </article>
             <h2 className='reveal'>My Responsibilities</h2>
             <article className='res-article reveal'>
-              <p style={{marginBottom:"12px"}}>My main responsibilites as a front end developer at the Werkz Technology, which is the Yangon Branch of the Amdon Group, includes</p>
+              <p style={{marginBottom:"12px"}}>My main responsibilites as a front end developer at the Werkz Technology, which is the Yangon Branch of the Amdon Group, are</p>
               <ul>
                 <li>Maintaining the existing legacy web applications and fixing or upgrading whenever necessary.</li>
                 <li>Functionality testing of the web applications both manually and automated.</li>

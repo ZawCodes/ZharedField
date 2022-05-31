@@ -36,6 +36,7 @@
     /* color: #777777; */
     margin-top: 32px;
     text-align: center;
+    cursor: pointer;
 }
 .main-container .left-div {
     width: 55%;

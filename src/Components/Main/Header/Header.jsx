@@ -2,6 +2,25 @@ import React from 'react'
 import './Header.css'
 
 const Header = () => {
+    const scrollToSection = (e) => {
+        switch (e) {
+            case 'Home':
+                var ele = document.getElementsByClassName('main-section')[0];
+                ele.scrollIntoView();
+                break;
+            case 'Work':
+                var ele = document.getElementsByClassName('work-section')[0];
+                ele.scrollIntoView();
+                break;
+            case 'Contact':
+                var ele = document.getElementsByClassName('contact-section')[0];
+                ele.scrollIntoView();
+                break;
+        
+            default:
+                break;
+        }
+    }
   return (
     <>
         <header className='header-wrap'>
@@ -10,9 +29,9 @@ const Header = () => {
             </h1>
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Work</a></li>
-                    <li><a>Contact</a></li>
+                    <li onClick={() => scrollToSection('Home')}><a>Home</a></li>
+                    <li onClick={() => scrollToSection('Work')}><a>Work</a></li>
+                    <li onClick={() => scrollToSection('Contact')}><a>Contact</a></li>
                 </ul>
             </nav>
         </header>

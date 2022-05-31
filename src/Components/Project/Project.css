@@ -1,5 +1,5 @@
 .project-section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 5% 10%;
 }
 .project-section > h3 {
@@ -16,11 +16,17 @@
 }
 .project-article .img-div {
     width: 25%;
+    position: relative;
 }
-.img-div > img {
+.img-div img {
     max-width: 300px;
     width: 100%;
+    /* height: 100%; */
     box-shadow: rgb(0 0 0 / 15%) 10px 8px 3.2px;
+    transition: 0.15s;
+}
+.img-div img:hover {
+    transform: scale(110%);
 }
 .project-article .desc-div {
     width: 75%;
@@ -54,7 +60,12 @@
         font-size: 14px;
     }
 }
+@media only screen and (max-height: 550px) {
+    .project-section {
+        min-height: 150vh;
+    }
 
+}
 /* animation */
 
 .project-section, .project-section > h3, .proj-wrap {

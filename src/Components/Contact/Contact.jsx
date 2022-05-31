@@ -16,7 +16,7 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-
+        console.log(form.current);
         emailjs.sendForm('service_6a773nj', 'zharedPortfolio', form.current, '7sGVAijiNaicJFPx1')
           .then((result) => {
               console.log(result.text);
@@ -24,6 +24,23 @@ const Contact = () => {
               console.log(error.text);
           });
     }
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const [formEmpty, setFormEmpty] = useState(true);
+    useEffect(() => {
+        if(name.length == 0 || email.length ==0 ||
+            subject.length == 0 || message.length == 0){
+                setFormEmpty(true)
+            }
+        else {
+            setFormEmpty(false)
+        }
+        console.log('form state', formEmpty);
+    }, [name,email,subject,message])
+    
   return (
       <>
         <section className='contact-section reveal'>
@@ -39,12 +56,12 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <span>Feel free to send me a message to talk about work.</span>
                     <div className='d-flex mt-2 '>
-                        <input className='contact-input reveal' type="text" name="name" placeholder='Name' />
-                        <input className='contact-input reveal' type="email" name="email" placeholder='Your email' />
+                        <input onChange={(e) => {setName(e.target.value)}} className='contact-input reveal' type="text" name="name" placeholder='Name' />
+                        <input onChange={(e) => {setEmail(e.target.value)}} className='contact-input reveal' type="email" name="email" placeholder='Your email' />
                     </div>
-                    <input className='contact-input mt-2 reveal' type="text" name="subject" placeholder='Subject' />
-                    <textarea className='contact-input mt-2 reveal' rows="4" name="message" placeholder='Your message'></textarea>
-                    <button className='contact-btn mt-2 reveal' type='submit'>Submit</button>
+                    <input onChange={(e) => {setSubject(e.target.value)}} className='contact-input mt-2 reveal' type="text" name="subject" placeholder='Subject' />
+                    <textarea onChange={(e) => {setMessage(e.target.value)}} className='contact-input mt-2 reveal' rows="4" name="message" placeholder='Your message'></textarea>
+                    <button disabled={formEmpty} className='contact-btn mt-2 reveal' type='submit'>Submit</button>
                 </form>
             </div>
              <div className='map-wrap reveal'>
