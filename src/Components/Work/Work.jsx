@@ -8,7 +8,7 @@ import AnimatedLetters from '../AnimatedLetters'
 const Work = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate-hover')
-  const workText = ['W','o','r','k',' ','E','x','p','e','r','i','e','n','c','e'];
+  const workText = ['E','x','p','e','r','i','e','n','c','e'];
 
   useEffect(()=>{
     window.addEventListener('scroll', revealFunction)
@@ -32,13 +32,13 @@ const Work = () => {
                   <img className="line-svg reveal" src={line}/>
                 </div>
                 <div className='div2 reveal'>
-                  <h4>2019 October to Current - The Amdon Consulting</h4>
+                  <h4>2019 October to Current - <a target="_blank" href='https://www.amdon.com/'>The Amdon Consulting</a></h4>
                   Build and maintain several web applications for online e-learning and STEM education using Angular and Angularjs.
                 </div>
               </div>
               <div className='year-01'>
                 <div className='div0 reveal'>
-                <h4>2019 May to August - Dir Ace Technology Internship</h4>
+                <h4>2019 May to August - <a target="_blank" href='https://www.diracetechnology.com/'>Dir Ace Technology</a> Internship</h4>
                 Developed an exam result checker web application using Spring boot and thymeleaf. Wrote mockup web templates for local stock market system.
                 </div>
                 <div className='div1'>
@@ -55,7 +55,7 @@ const Work = () => {
                   <img className="line-svg reveal" style={{visibility: 'hidden'}} src={line}/>
                 </div>
                 <div className='div2 reveal'>
-                  <h4>2018 November - Base Technology Field Study</h4>
+                  <h4>2018 November - <a target="_blank" href='https://www.facebook.com/BaseTechnologyMyanmar/'>Base Technology</a> Field Study</h4>
                   Web Crawling local News Websites and storing them in seperate files using Python.
                 </div>
               </div>

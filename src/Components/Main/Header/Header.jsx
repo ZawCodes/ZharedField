@@ -24,9 +24,11 @@ const Header = () => {
   return (
     <>
         <header className='header-wrap'>
+            <a href='./'>
             <h1 className='text-logo'>
                 zha<span>red</span>
             </h1>
+            </a>
             <nav>
                 <ul>
                     <li onClick={() => scrollToSection('Home')}><a>Home</a></li>

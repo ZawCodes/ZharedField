@@ -22,6 +22,19 @@
 .exp-tree {
     margin: 3rem;
 }
+.exp-tree a {
+    color: inherit;
+    background-image: linear-gradient(rgb(255 113 33), #ff7121);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.3s;
+    text-decoration: none;
+}
+.exp-tree a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
 .year-00 , .year-01, .year-02 {
     display: flex;
 }

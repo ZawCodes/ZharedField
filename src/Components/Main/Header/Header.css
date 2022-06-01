@@ -11,9 +11,13 @@
     width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+.header-wrap > a {
+    text-decoration: none;
+}
 .text-logo {
     font-family: 'Advent Pro', sans-serif;
     font-size: 34px;
+    color: #f7f0de;
 }
 .text-logo > span {
     color: #ff4040;
@@ -50,10 +54,18 @@
      }
  }
  @media only screen and (max-width: 450px) {
+     .header-wrap {
+         height: 50px;
+     }
      .text-logo {
          font-size: 22px;
      }
      .header-wrap nav > ul {
          font-size: 14px;
+     }
+ }
+ @media only screen and (max-height: 450px) {
+     .header-wrap {
+         height: 50px;
      }
  }

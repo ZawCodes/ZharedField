@@ -22,7 +22,7 @@ const Skill = () => {
         team: 'teamplay',
         problem: 'problemsolve'
     }
-    const frontendSkills = 'Javascript, Jquery, Typescript, Html, Css, Scss, Angular, Angularjs, Reactjs, Bootstrap, Git, Jasmine, Cypress';
+    const frontendSkills = 'Javascript, Typescript, Html, Css, Scss, Angular, Reactjs, Git, Jasmine, Cypress, SQL, MongoDB, Nodejs';
     const uiuixSkills = 'Sketch, Figma, Photoshop, Illustrator, Krita, Responsive web design';
     const agileSkills = 'Waterfall, Agile, Scrum';
     const testingSkills = 'Unit testing, Integration testing, Accceptance testing, Functional testing, Manual testing, Test Automation';
@@ -60,9 +60,9 @@ const Skill = () => {
                     <div className='skill-wrap'>
                         <div className='left-div reveal'>
                             <ul className='skill-list'>
-                                <li onClick={() => dispatch({ type: 'frontend', index: 0 })}>Front end Development</li>
+                                <li onClick={() => dispatch({ type: 'frontend', index: 0 })}>Web Development</li>
                                 <li onClick={() => dispatch({ type: 'uiux', index: 1 })}>Ui/Ux Design</li>
-                                <li onClick={() => dispatch({ type: 'agile', index: 2 })}>Software Development Lifecycles</li>
+                                <li onClick={() => dispatch({ type: 'agile', index: 2 })}>SDLC</li>
                                 <li onClick={() => dispatch({ type: 'testing', index: 3 })}>Software Testing</li>
                                 <li onClick={() => dispatch({ type: 'teamplay', index: 4 })}>Team Orientation</li>
                                 <li onClick={() => dispatch({ type: 'problemsolve', index: 5 })}>Problem Solving</li>

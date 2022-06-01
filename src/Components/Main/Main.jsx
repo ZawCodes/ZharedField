@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import './Main.css';
 // import TagCloud from 'TagCloud';
 import AnimatedLetters from '../AnimatedLetters'
+import MyCV from '../assets/files/MyCV.pdf'
 
 const Main = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -36,9 +37,11 @@ const Main = () => {
         <>
             <Header />
             <section className='main-section'>
+                <a target="_blank" href={MyCV}>
                 <div className='cv-download'>
                     Download CV Here!
                 </div>
+                </a>
                 <main className='main-container'>
                     <div className='left-div'>
                         <h3>

@@ -157,7 +157,7 @@
     }
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 405px) {
     .main-container h3 {
         font-size: 40px;
         margin-bottom: 6px;
