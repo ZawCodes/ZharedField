@@ -20,8 +20,15 @@ to run the app.
 
 ## Further Improvement Plans
 
-While I want to keep improving and updating the site to keep it as flawless and elegant as possible, I simply do not have extra time to dwell on this one. 
+While I want to keep improving and updating the site to keep it as flawless and elegant as possible, I simply do not have extra time. 
 
 But there will be future versions of My portfolio when I level up.
+
+[Portfolio Website link](https://zawhtetaung-zhared.github.io/ZharedField/).
+
+## Home page preview
+
+![Home preview](src/assets/images/preview.png "Home preview")
+
 
 ### Thanks for reading
