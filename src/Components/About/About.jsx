@@ -58,7 +58,7 @@ const About = () => {
              <h4>How I roll</h4> <p>
              <span className='tab'></span>As an artist, I tend to take inspirations from different places and try to create something new. Building a website is a lot similiar to making an art piece.
                When you've mastered to gather, combine and recreate the stuff you want, you can do almost anything. 
-               I enjoy playing video games, watch anime and movies in my free time.
+               As a hobby, I like to play video games and watch movies in my free time.
              </p>
               </div>
             </article>

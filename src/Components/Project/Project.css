@@ -18,6 +18,19 @@
     width: 25%;
     position: relative;
 }
+.project-article a {
+    color: #ff7121;
+    background-image: linear-gradient(rgb(255 113 33), #ff7121);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.3s;
+    text-decoration: none;
+}
+.project-article a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
 .img-div img {
     max-width: 300px;
     width: 100%;
@@ -31,9 +44,13 @@
 .project-article .desc-div {
     width: 75%;
     padding-left: 5rem;
+    padding-right: 1rem;
 }
 .desc-div > h4 {
     margin-bottom: 2rem;
+}
+.desc-div p {
+    text-align: justify;
 }
 .proj-wrap {
     margin-top: 2rem;

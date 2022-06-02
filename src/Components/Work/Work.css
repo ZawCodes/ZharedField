@@ -23,7 +23,7 @@
     margin: 3rem;
 }
 .exp-tree a {
-    color: inherit;
+    color: #ff7121;
     background-image: linear-gradient(rgb(255 113 33), #ff7121);
     background-position: 0 100%;
     background-size: 0% 2px;
@@ -98,7 +98,7 @@
         font-size: 40px;
     }
     .circle-svg {
-        width: 100%;
+        width: 80%;
     }
     .exp-tree {
         margin: 3rem 0;

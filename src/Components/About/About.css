@@ -170,7 +170,9 @@
     font-size: 10px;
 }
 .invi-box {
+    position: relative;
     height: 200px;
+    width: 200px;
 }
 .to {
     position: absolute;
@@ -227,6 +229,16 @@
     .second-article .left-div {
         margin-top: 5rem;
     }
+    .about-section .first-article .left-div,
+    .about-section .first-article .right-div,
+    .about-section .second-article .left-div,
+    .about-section .second-article .right-div {
+       width: 100%;
+   }
+   .second-article .left-div {
+    display: flex;
+    justify-content: center;
+   }
 }
 @media only screen and (max-width: 600px) {
     .right-div > div > img {
@@ -276,6 +288,7 @@
     }
 }
 @media only screen and (max-width: 450px) {
+
     .right-div > div > img {
         width: 80px;
     }
