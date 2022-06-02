@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ZharedField/static/css/main.d84c9813.css",
-    "main.js": "/ZharedField/static/js/main.45e2e171.js",
+    "main.js": "/ZharedField/static/js/main.b836e201.js",
     "static/js/787.6a277eff.chunk.js": "/ZharedField/static/js/787.6a277eff.chunk.js",
     "static/media/reftwo.jpg": "/ZharedField/static/media/reftwo.3067757032ab79c3c11f.jpg",
     "static/media/toram.jpg": "/ZharedField/static/media/toram.4f220a40735de6c75c0b.jpg",
@@ -11,7 +11,7 @@
     "static/media/nodma_classroom.png": "/ZharedField/static/media/nodma_classroom.ee4a26126a47f7d98ea4.png",
     "static/media/classwerkz.png": "/ZharedField/static/media/classwerkz.ccb37c725cbadc93a1a3.png",
     "static/media/nodma_portal.png": "/ZharedField/static/media/nodma_portal.a65a8141e44da22dc128.png",
-    "static/media/MyCV.pdf": "/ZharedField/static/media/MyCV.41f68167285b8aad6ccc.pdf",
+    "static/media/MyCV.pdf": "/ZharedField/static/media/MyCV.9cb8a676ac12ae07529a.pdf",
     "static/media/ino.jpg": "/ZharedField/static/media/ino.61f0bb82ee2614412434.jpg",
     "static/media/UIT-Logo-big.png": "/ZharedField/static/media/UIT-Logo-big.c71e3f6b12626da70ad7.png",
     "static/media/me.jpg": "/ZharedField/static/media/me.ef03a5b99cbad1b52e75.jpg",
@@ -20,11 +20,11 @@
     "static/media/line.svg": "/ZharedField/static/media/line.0bd3591cc017af36b62490d9090ace34.svg",
     "static/media/circle.svg": "/ZharedField/static/media/circle.0c51521f91c066d627b08a5eaddc557e.svg",
     "main.d84c9813.css.map": "/ZharedField/static/css/main.d84c9813.css.map",
-    "main.45e2e171.js.map": "/ZharedField/static/js/main.45e2e171.js.map",
+    "main.b836e201.js.map": "/ZharedField/static/js/main.b836e201.js.map",
     "787.6a277eff.chunk.js.map": "/ZharedField/static/js/787.6a277eff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d84c9813.css",
-    "static/js/main.45e2e171.js"
+    "static/js/main.b836e201.js"
   ]
 }
