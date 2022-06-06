@@ -28,7 +28,7 @@ But there will be future versions of My portfolio when I level up.
 
 ## Home page preview
 
-![Home preview](src/assets/images/preview.png "Home preview")
+![Home preview](src/Components/assets/images/preview.png "Home preview")
 
 
 ### Thanks for reading
