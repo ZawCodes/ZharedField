@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './Work.css'
-import circle from '../assets/images/circle.svg';
-import line from '../assets/images/line.svg';
+// import circle from '../assets/images/circle.svg';
+// import line from '../assets/images/line.svg';
 import revealFunction from '../assets/RevealFunction';
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -27,9 +27,9 @@ const Work = () => {
             <article className='exp-tree'>
               <div className='year-00'>
                 <div className='div0 reveal'></div>
-                <div className='div1'>
-                  <img className="circle-svg reveal" src={circle}/>
-                  <img className="line-svg reveal" src={line}/>
+                <div className='div1 flip'>
+                  {/* <img className="circle-svg reveal" src={circle}/>
+                  <img className="line-svg reveal" src={line}/> */}
                 </div>
                 <div className='div2 reveal'>
                   <h4>2019 October to Current - <a target="_blank" href='https://www.amdon.com/'>The Amdon Consulting</a></h4>
@@ -41,18 +41,18 @@ const Work = () => {
                 <h4>2019 May to August - <a target="_blank" href='https://www.diracetechnology.com/'>Dir Ace Technology</a> Internship</h4>
                 Developed an exam result checker web application using Spring boot and thymeleaf. Wrote mockup web templates for local stock market system.
                 </div>
-                <div className='div1'>
-                  <img className="circle-svg reveal" src={circle}/>
-                  <img className="line-svg reveal" src={line}/>
+                <div className='div1 flop'>
+                  {/* <img className="circle-svg reveal" src={circle}/>
+                  <img className="line-svg reveal" src={line}/> */}
                 </div>
                 <div className='div2 reveal'>
                 </div>
               </div>
               <div className='year-02'>
                 <div className='div0 reveal'></div>
-                <div className='div1'>
-                  <img className="circle-svg reveal" src={circle}/>
-                  <img className="line-svg reveal" style={{visibility: 'hidden'}} src={line}/>
+                <div className='div1 flip'>
+                  {/* <img className="circle-svg reveal" src={circle}/>
+                  <img className="line-svg reveal" style={{visibility: 'hidden'}} src={line}/> */}
                 </div>
                 <div className='div2 reveal'>
                   <h4>2018 November - <a target="_blank" href='https://www.facebook.com/BaseTechnologyMyanmar/'>Base Technology</a> Field Study</h4>

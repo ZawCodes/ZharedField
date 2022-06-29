@@ -39,10 +39,17 @@
     display: flex;
 }
 .div0, .div2 {
-    width: 45%;
+    width: 50%;
+    margin: 0 3%;
+}
+.flip {
+    background: #f7f0de;
+}
+.flop {
+    background: #ff7121;
 }
 .div1 {
-    width: 5%;
+    width: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;

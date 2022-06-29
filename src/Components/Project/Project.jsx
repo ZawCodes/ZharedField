@@ -26,7 +26,7 @@ const Project = () => {
              </h3>
              <article className='project-article'>
                  <p>Over the years, I've worked on 3 main projects, 
-                    <a cl target="_blank" href='https://www.classwerkz.com/'> Classwerkz</a>, 
+                    <a target="_blank" href='https://www.classwerkz.com/'> Classwerkz</a>, 
                     <a target="_blank" href='https://www.nodma.com/'> Nodma</a> and 
                     <a target="_blank" href='https://www.stemwerkz.org/'> Stemwerkz</a>, 
                  together with my colleagues. Each project has its own sub projects with their respective websites. Below are the ones I've mainly worked on.
