@@ -73,17 +73,6 @@
     border-radius: 0;
     border: 5px solid #f7f0de;
 }
-.right-div .me-pic::after {
-    content: '"When I had long hair"';
-    position: absolute;
-    text-align: center;
-    width: inherit;
-    color: white;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: -60px;
-    font-size: 12px;
-}
 .right-div > div > img {
     width: 200px;
 }
