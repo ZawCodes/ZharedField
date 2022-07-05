@@ -33,7 +33,7 @@ const Project = () => {
                  </p>
                  <div className='proj-wrap reveal'>
                      {ProjApi.map((value, index) => {
-                         return <Card key={index} img={value.image} title={value.title} body={value.body} link={value.link} id={index}/>
+                         return <Card key={index} projects={value} id={index}/>
                      })}
                  </div>
              </article>

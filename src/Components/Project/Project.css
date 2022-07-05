@@ -46,8 +46,12 @@
     padding-left: 5rem;
     padding-right: 1rem;
 }
-.desc-div > h4 {
+.desc-div > h6 {
     margin-bottom: 2rem;
+    color: #555555;
+}
+.desc-div > h4 {
+    margin-bottom: 1rem;
 }
 .desc-div p {
     text-align: justify;
