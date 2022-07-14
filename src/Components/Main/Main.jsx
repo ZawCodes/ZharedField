@@ -8,7 +8,7 @@ import MyCV from '../assets/files/MyCV.pdf'
 const Main = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const welcomeText = ['H', 'i',',', ' ',`I`,`'`, 'm',' ','Z', 'h', 'a', 'r', 'e', 'd'];
+    const welcomeText = ['Z','a','w',' ','H','t','e','t',' ','A','u','n','g'];
 
     const texts = [
         'Javascript', 'Typescript', 'Html', 'Css', 'Angularjs', 'Angular', 'Reactjs', 'Nodejs', 'Git', 'Figma', 'Bootstrap', 'SQL'
@@ -38,9 +38,9 @@ const Main = () => {
             <Header />
             <section className='main-section'>
                 <a target="_blank" href={MyCV}>
-                <div className='cv-download'>
+                {/* <div className='cv-download'>
                     Download CV Here!
-                </div>
+                </div> */}
                 </a>
                 <main className='main-container'>
                     <div className='left-div'>
@@ -51,9 +51,10 @@ const Main = () => {
                             idx={1}
                             />
                         </h3>
-                        <p><span className='tab'></span>I'm a <span>Front end developer </span>with 3 years of experience
-                           living in Myanmar. I build online e-learning platforms and classroom management systems for my company.</p>
-                        <p onClick={() => scrollToAbout()} className='more'>More about me</p>
+                        <p>A Front end developer from Myanmar.</p>
+                        <div className='d-flex justify-content-center' onClick={() => scrollToAbout()}>
+                            <p className='more'>More about me</p>
+                        </div>
                     </div>
                     {/* <div className='right-div tagcloud'>
                     </div> */}

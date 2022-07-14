@@ -15,8 +15,8 @@
     flex-wrap: wrap;
 }
 .main-container h3 {
-    font-size: 76px;
-    margin-bottom: 8px;
+    font-size: 70px;
+    margin-bottom: 20px;
     margin-top: 150px;
 }
 /* .main-container h3 > span {
@@ -37,12 +37,16 @@
     margin-top: 32px;
     text-align: center;
     cursor: pointer;
+    padding: 10px;
+    border: 1px solid #6bd4e3;
+    max-width: 200px;
+    border-radius: 6px;
 }
 .main-container .left-div {
-    width: 55%;
+    /* width: 55%; */
     display: flex;
     flex-direction: column;
-
+    text-align: center;
 }
 .main-container .left-div > p {
     /* padding: 40px; */
