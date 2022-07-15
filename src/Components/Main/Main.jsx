@@ -4,6 +4,7 @@ import './Main.css';
 // import TagCloud from 'TagCloud';
 import AnimatedLetters from '../AnimatedLetters'
 import MyCV from '../assets/files/MyCV.pdf'
+import Mepic from '../assets/images/me.png'
 
 const Main = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,11 +38,11 @@ const Main = () => {
         <>
             <Header />
             <section className='main-section'>
-                <a target="_blank" href={MyCV}>
-                {/* <div className='cv-download'>
+                {/* <a target="_blank" href={MyCV}>
+                <div className='cv-download'>
                     Download CV Here!
-                </div> */}
-                </a>
+                </div>
+                </a> */}
                 <main className='main-container'>
                     <div className='left-div'>
                         <h3>
@@ -51,15 +52,12 @@ const Main = () => {
                             idx={1}
                             />
                         </h3>
-                        <p>A Front end developer from Myanmar.</p>
-                        <div className='d-flex justify-content-center' onClick={() => scrollToAbout()}>
-                            <p className='more'>More about me</p>
+                        <p>A Front end developer with 3 years of work experience currently living in Myanmar.</p>
+                        <div style={{marginTop: '40px'}} className='d-flex' onClick={() => scrollToAbout()}>
+                            {/* <p className='more blue'>More about me</p> */}
+                            <a style={{ textDecoration: 'none'}} target="_blank" href={MyCV}><p className='more orange'>Download Resume</p></a>
                         </div>
-                    </div>
-                    {/* <div className='right-div tagcloud'>
-                    </div> */}
-                </main>
-                <div className='logo-wrap'>
+                        <div className='logo-wrap'>
                    <a href='https://github.com/ZawHtetAung-Zhared' target='_blank' className='link-logo'>
                    <i className='fab fa-github'></i>
                    </a>
@@ -70,6 +68,11 @@ const Main = () => {
                    <i className='fab fa-linkedin-in'></i>
                    </a>
                 </div>
+                    </div>
+                    {/* <div className='right-div'>
+                        <img className='Profile-pic' src={Mepic}/>
+                    </div> */}
+                </main>
             </section>
         </>
     )

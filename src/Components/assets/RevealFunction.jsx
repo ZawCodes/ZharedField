@@ -8,9 +8,9 @@ const revealFunction = () => {
     if (revealTop < windowHeight - revealPoint) {
       leftReveals[i].classList.add('active');
     }
-    // else {
-    //   leftReveals[i].classList.remove('active');
-    // }
+    else {
+      // leftReveals[i].classList.remove('active');
+    }
     }
    
   }

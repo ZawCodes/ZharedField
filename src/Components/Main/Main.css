@@ -7,23 +7,28 @@
     background-blend-mode: lighten;
     animation: fadeIn;
     animation-duration: 2s;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    min-height: fit-content;
 }
 .main-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 8%;
+}
+.Profile-pic {
+    width: 240px;
+    border-radius: 25%;
 }
 .main-container h3 {
-    font-size: 70px;
+    font-size: 200px;
     margin-bottom: 20px;
-    margin-top: 150px;
+    font-weight: 400;
 }
 /* .main-container h3 > span {
     color:#303030;
 } */
 .main-container div {
-    font-size: 20px;
+    font-size: 18px;
 }
 .tab {
     margin-left: 40px;
@@ -33,32 +38,54 @@
 }
 .more {
     font-size: 16px;
-    color: #777777;
-    margin-top: 32px;
+    color: #fff;
     text-align: center;
     cursor: pointer;
-    padding: 10px;
-    border: 1px solid #6bd4e3;
+    padding: 4px 10px;
     max-width: 200px;
     border-radius: 6px;
 }
-.main-container .left-div {
-    /* width: 55%; */
+.blue {
+    border: 1px solid #6bd4e3;
+}
+.orange {
+    background: #d60038;
+    border: 1px solid #fff;
+    opacity: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.orange:hover {
+    background: #fff;
+    border: 1px solid #d60038;
+    color: #d60038;
+    transition: 0.25s ease-in-out;
+}
+.main-container > .left-div {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    padding: 40px;
 }
-.main-container .left-div > p {
+.main-container > .left-div > p {
     /* padding: 40px; */
+    width: 80%;
+    color: #d60038;
     opacity: 0;
     animation: fadeIn;
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    font-weight: 300;
 }
-/* .right-div {
-    min-width: 45%;
-} */
+.main-container > .right-div {
+    /* min-width: 45%; */
+    display: flex;
+    align-items: end;
+    padding: 40px;
+}
 .tagcloud {
     color: #ff4040;
     opacity: 0;
@@ -80,6 +107,12 @@
     transition: 0.25s ease-in-out;
     text-decoration: none;
     color: inherit;
+
+    opacity: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
 .link-logo:hover {
     color: #f7f0de;
@@ -89,10 +122,12 @@
     display: flex;
     position: absolute;
     right: 5rem;
-    bottom: 5rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
 }
 .link-logo:not(:last-child) {
-    margin-right: 12px;
+    margin-bottom: 40px;
 }
 .cv-download {
     font-size: 16px;
@@ -114,11 +149,16 @@
 .cv-download:hover {
     font-size: 18px;
 }
+@media only screen and (max-width: 1400px) {
+    .main-container h3 {
+        font-size: 120px;
+        margin-bottom: 6px;
+    }
+}
 @media only screen and (max-width: 1150px) {
     .main-container h3 {
-        font-size: 66px;
+        font-size: 100px;
         margin-bottom: 6px;
-        margin-top: 100px;
     }
     .main-container .left-div > p {
         font-size: 16px;
@@ -128,10 +168,14 @@
     }
 }
 @media only screen and (max-width: 803px) {
-    .main-container h3 {
-        font-size: 56px;
-        margin-bottom: 6px;
-        margin-top: 100px;
+    .main-container {
+        flex-direction: column-reverse;
+    }
+    .Profile-pic {
+        width: 100px;
+    }
+    .main-container > .right-div {
+        justify-content: center;
     }
     .main-container .left-div > p {
         font-size: 14px;
@@ -139,9 +183,8 @@
 }
 @media only screen and (max-width: 687px) {
     .main-container h3 {
-        font-size: 46px;
+        font-size: 80px;
         margin-bottom: 6px;
-        margin-top: 100px;
     }
     .link-logo {
         width: 30px;
@@ -152,24 +195,19 @@
         bottom: 2rem;
         right: 2rem;
     }
-}
-@media only screen and (max-width: 450px) {
-    .main-container h3 {
-        font-size: 30px;
-        margin-bottom: 6px;
-        margin-top: 25vh;
+    .link-logo:not(:last-child) {
+        margin-bottom: 20px;
     }
-
 }
+
 @media only screen and (max-width: 405px) {
     .main-container h3 {
         font-size: 40px;
         margin-bottom: 6px;
-        margin-top: 25vh;
         /* white-space: nowrap; */
     }
     .main-container .left-div {
-        width: 80%;
+        /* width: 80%; */
     }
 }
 @media only screen and (max-height: 550px) {
