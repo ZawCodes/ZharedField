@@ -11,7 +11,7 @@
     /* min-height: fit-content; */
     position: relative;
 
-    background-image: url('../assets/images/bagan.webp');
+    background-image: url('../assets/images/bagan.gif');
 }
 .main-container {
     /* background: rgba(255, 255, 255, 0.2); */
@@ -19,14 +19,16 @@
 
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 16vh;
 }
 .Profile-pic {
     width: 240px;
     border-radius: 25%;
 }
 .main-container h3 {
-    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    /* background: rgba(255, 255, 255, 0.8); */
     backdrop-filter: blur(1px);
     width: fit-content;
     padding: 0 10px;

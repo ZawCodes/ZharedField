@@ -2,23 +2,23 @@ import './index.scss'
 import { useEffect } from 'react';
 const AnimatedLetters = ({ letterClass, strArray, idx, comp='' }) => {
 
-  useEffect(() => {
+  // useEffect(() => {
     
-  if(comp == 'main') {
-    setInterval(function() {
-      const rnd = Math.floor(Math.random() * strArray.length)
-      var ele = document.getElementsByClassName(`main_${rnd + idx}`);
-      console.log('ele', ele);
+  // if(comp == 'main') {
+  //   setInterval(function() {
+  //     const rnd = Math.floor(Math.random() * strArray.length)
+  //     var ele = document.getElementsByClassName(`main_${rnd + idx}`);
+  //     console.log('ele', ele);
 
-      ele[0].classList.add("hover-effect");
+  //     ele[0].classList.add("hover-effect");
 
-      setTimeout(() => {
-        ele[0].classList.remove("hover-effect");
-      }, 1000);
-    }, 3000);
-  }
+  //     setTimeout(() => {
+  //       ele[0].classList.remove("hover-effect");
+  //     }, 1000);
+  //   }, 3000);
+  // }
   
-  }, [])
+  // }, [comp])
   
 
   return (

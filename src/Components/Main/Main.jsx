@@ -9,7 +9,9 @@ import Mepic from '../assets/images/me.png'
 const Main = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const welcomeText = ['Z','a','w','H','t','e','t','A','u','n','g'];
+    const zaw = ['Z','a','w'];
+    const htet = ['H','t','e','t'];
+    const aung = ['A','u','n','g'];
 
     const texts = [
         'Javascript', 'Typescript', 'Html', 'Css', 'Angularjs', 'Angular', 'Reactjs', 'Nodejs', 'Git', 'Figma', 'Bootstrap', 'SQL'
@@ -19,6 +21,7 @@ const Main = () => {
     const options = {
         radius: 300,
     };
+    
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -48,7 +51,19 @@ const Main = () => {
                         <h3>
                             <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={welcomeText}
+                            strArray={zaw}
+                            comp={'main'}
+                            idx={1}
+                            />
+                            <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={htet}
+                            comp={'main'}
+                            idx={1}
+                            />
+                            <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={aung}
                             comp={'main'}
                             idx={1}
                             />

@@ -4,12 +4,12 @@ import './Header.css'
 const Header = () => {
     const scrollToSection = (e) => {
         switch (e) {
-            case 'Home':
-                var ele = document.getElementsByClassName('main-section')[0];
+            case 'About':
+                var ele = document.getElementsByClassName('about-section')[0];
                 ele.scrollIntoView();
                 break;
-            case 'Work':
-                var ele = document.getElementsByClassName('work-section')[0];
+            case 'Project':
+                var ele = document.getElementsByClassName('project-section')[0];
                 ele.scrollIntoView();
                 break;
             case 'Contact':
@@ -31,8 +31,8 @@ const Header = () => {
             </a>
             <nav>
                 <ul>
-                    <li onClick={() => scrollToSection('Home')}><a>Home</a></li>
-                    <li onClick={() => scrollToSection('Work')}><a>Work</a></li>
+                    <li onClick={() => scrollToSection('About')}><a>About</a></li>
+                    <li onClick={() => scrollToSection('Project')}><a>Project</a></li>
                     <li onClick={() => scrollToSection('Contact')}><a>Contact</a></li>
                 </ul>
             </nav>

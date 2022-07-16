@@ -6,6 +6,7 @@
     padding: 5% 10%;
     opacity: 0;
     transition: all 2s ease;
+    position: relative;
 }
 .about-section p {
     text-align: right;
@@ -29,7 +30,7 @@
     transition: all 2s ease;
 }
 .active{
-    transform: translate(0px, 0px) !important;
+    transform: translate(0px, 0px);
     opacity: 1 !important;
 }
 /* .about-section::before {
@@ -135,11 +136,10 @@
 }
 .own-pic {
     width: 200px;
-    /* position: absolute;
-    margin-left: 40px;
-    margin-top: 40px; */
-    /* transition: 0.6s; */
-    /* cursor: pointer; */
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all 1s ease;
+    animation-delay: 0.2s;
 }
 .own-pic:hover {
     transform: scale(250%) translateX(40px);
@@ -312,4 +312,29 @@
         font-size: 30px;
         left: -70px;
     }
+}
+
+/* wave */
+
+.about-wave {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    /* opacity: 0;
+    transition: all 2.5s ease; */
+}
+
+.about-wave svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 59px;
+}
+
+.about-wave .shape-fill {
+    fill: #F1C556;
 }
