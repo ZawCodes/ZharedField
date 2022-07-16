@@ -15,8 +15,13 @@
 
   &:hover {
     animation: flash 1s;
-    color: #ff7121;
+    color: #d60038;
   }
+}
+
+.hover-effect {
+  animation: flash 1s;
+  color: #d60038;
 }
 
 @for $i from 1 through 35 {

@@ -7,10 +7,16 @@
     background-blend-mode: lighten;
     animation: fadeIn;
     animation-duration: 2s;
-    /* min-height: 100vh; */
-    min-height: fit-content;
+    min-height: 100vh;
+    /* min-height: fit-content; */
+    position: relative;
+
+    background-image: url('../assets/images/bagan.webp');
 }
 .main-container {
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(4px); */
+
     display: flex;
     justify-content: center;
     margin-top: 8%;
@@ -20,7 +26,12 @@
     border-radius: 25%;
 }
 .main-container h3 {
-    font-size: 200px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+    width: fit-content;
+    padding: 0 10px;
+
+    font-size: 160px;
     margin-bottom: 20px;
     font-weight: 400;
 }
@@ -70,6 +81,9 @@
     padding: 40px;
 }
 .main-container > .left-div > p {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+    padding: 10px;
     /* padding: 40px; */
     width: 80%;
     color: #d60038;
@@ -95,6 +109,7 @@
     animation-fill-mode: forwards;
 }
 .link-logo {
+    border: 1px solid white;
     padding: 10px;
     background: #f1c556;
     width: 40px;
@@ -121,7 +136,7 @@
 .logo-wrap {
     display: flex;
     position: absolute;
-    right: 5rem;
+    right: 0rem;
     top: 50%;
     transform: translate(-50%,-50%);
     flex-direction: column;
@@ -191,10 +206,10 @@
         height: 30px;
         font-size: 12px;
     }
-    .logo-wrap {
+    /* .logo-wrap {
         bottom: 2rem;
         right: 2rem;
-    }
+    } */
     .link-logo:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -210,11 +225,11 @@
         /* width: 80%; */
     }
 }
-@media only screen and (max-height: 550px) {
+/* @media only screen and (max-height: 550px) {
     .logo-wrap {
        position: unset;
        justify-content: flex-end;
        margin: 2rem 2rem 0 0;
     }
 
-}
+} */

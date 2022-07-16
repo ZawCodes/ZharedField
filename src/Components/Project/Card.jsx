@@ -4,7 +4,7 @@ import './Project.css'
 const Card = (props) => {
     const {image, title, body, link, tools} = props.projects;
     useEffect(() => {
-        console.log('props', props);
+        // console.log('props', props);
     }, [])
     
   return (

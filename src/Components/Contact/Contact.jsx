@@ -46,7 +46,7 @@ const Contact = () => {
         else {
             setFormEmpty(false)
         }
-        console.log('form inputs', name, email, subject, message);
+        // console.log('form inputs', name, email, subject, message);
     }, [name,email,subject,message])
     
   return (

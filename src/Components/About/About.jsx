@@ -28,22 +28,34 @@ const About = () => {
             <article className='first-article'>
                 <div className='left-div reveal'>
             
-                <h4>Intro</h4>  <p>
-              <span className='tab'></span>My burmese name is Zaw Htet Aung.
-                  I'm a 24 y/o junior web developer as well as an amateur artist.
-                   I've been working as a full-time front end developer at <a href='https://www.amdon.com/' className="amdon-group">the Amdon group</a> since I graduated my university in 2019, 
-                   December with a Bachelor's degree in Software Engineering.
-                   I'm a natural born creator and I like to create many things including websites, arts, stories etc.
+                <h4>Intro</h4>  
+              <p>
+                   A 24 y/o software developer with a passion for creating beautiful and user-friendly websites. Born and raised in Myanmar. 
+                   Graduated from High School in 2014, achieved a Level 4 Diploma in Computing in 2016 and a Bachelor's Degree in Software Engineering in 2019.
+                   A full time professional Front-end developer at the <a href='https://www.amdon.com/' className="amdon-group">Amdon Consulting Group</a> and an amateur artist.
               </p>
                 </div>
                 <div className='right-div'>
-                    <div className='me-pic reveal'>
                       {/* <div className='overlay'></div>  */}
-                      <img src={Mepic}/>
-                    </div>
+                      <img className='me-pic reveal' src={Mepic}/>
                 </div>
             </article>
-            <article className='second-article'>
+            
+            <article className='first-article'>
+                <div className='left-div reveal'>
+            
+                <h4 style={{visibility: 'hidden'}}>Intro</h4>  
+                <p>
+                "As an artist, I tend to take inspirations from different places and try to create something new. Building a website is a lot similiar to making an art piece.
+               When you've mastered to gather, combine and recreate the stuff you want, I belive you can do almost anything."
+              </p>
+                </div>
+                <div className='right-div'>
+                      {/* <div className='overlay'></div>  */}
+                      <img className='own-pic reveal' src={ownPic}/>
+                </div>
+            </article>
+            {/* <article className='second-article'>
               <div className='left-div reveal'>
                 <div className='invi-box'>
                 <span className='from'>From these</span>
@@ -61,7 +73,7 @@ const About = () => {
                As a hobby, I like to play video games and watch movies in my free time.
              </p>
               </div>
-            </article>
+            </article> */}
             {/* <div className='about-skill'>
               <span>But what about your skills?</span>
             </div> */}

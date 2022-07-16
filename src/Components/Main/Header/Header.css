@@ -4,7 +4,9 @@
     align-items: center;
     height: 50px;
     padding: 10px 40px;
-    background: #1d1603;
+    /* background: #1d1603; */
+    background: rgb(0 0 0 / 70%);
+    backdrop-filter: blur(4px);
     color: #f7f0de;
     z-index: 1;
     position: fixed;
