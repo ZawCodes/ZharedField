@@ -16,7 +16,12 @@ const Work = () => {
 
   return (
     <>
-        <section className='work-section reveal'>
+        <section className='work-section'>
+        <div className="work-curve">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" className="shape-fill"></path>
+              </svg>
+            </div>
           <h3 className='reveal'>
           <AnimatedLetters
                             letterClass={letterClass}
@@ -62,7 +67,7 @@ const Work = () => {
             </article>
             <h2 className='reveal'>My Responsibilities</h2>
             <article className='res-article reveal'>
-              <p style={{marginBottom:"12px"}}>My main responsibilites as a front end developer at the Werkz Technology, which is the Yangon Branch of the Amdon Group, are</p>
+              <p style={{marginBottom:"12px"}}>My main responsibilites as a front-end developer at the Amdon Consulting Group includes</p>
               <ul>
                 <li>Maintaining the existing legacy web applications and fixing or upgrading whenever necessary.</li>
                 <li>Functionality testing of the web applications both manually and automated.</li>

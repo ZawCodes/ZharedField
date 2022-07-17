@@ -1,9 +1,11 @@
 .project-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 5% 10%;
+    position: relative;
 }
 .project-section > h3 {
     font-size: 60px;
+    font-weight: 400;
     position: relative;
     border-bottom: 2px solid #f1c556;
 }
@@ -13,6 +15,7 @@
 }
 .project-article {
     margin-top: 3rem;
+    margin-bottom: 40px;
 }
 .project-article .img-div {
     width: 25%;
@@ -89,8 +92,32 @@
 }
 /* animation */
 
-.project-section, .project-section > h3, .proj-wrap {
+.project-section > h3, .proj-wrap {
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 2s ease;
+}
+
+
+/* curve */
+
+.project-curve {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.project-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 39px;
+}
+
+.project-curve .shape-fill {
+    fill: #F7F0DE;
 }

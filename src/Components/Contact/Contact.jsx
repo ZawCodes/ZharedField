@@ -51,45 +51,50 @@ const Contact = () => {
     
   return (
       <>
-        <section className='contact-section reveal'>
-            <h3 className='reveal'>
-            <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={contactText}
-                            idx={1}
-                            />
-            </h3>
-        <article className='contact-article'>
-            <div className='contact-form-container'>
-                <form ref={form} onSubmit={sendEmail}>
-                    <span>Feel free to send me a message to talk about work.</span>
-                    <div className='d-flex mt-2 '>
-                        <input onChange={(e) => {setName(e.target.value)}} className='contact-input reveal' type="text" value={name} name="name" placeholder='Name' />
-                        <input onChange={(e) => {setEmail(e.target.value)}} className='contact-input reveal' type="email" value={email} name="email" placeholder='Your email' />
-                    </div>
-                    <input onChange={(e) => {setSubject(e.target.value)}} className='contact-input mt-2 reveal' type="text" value={subject} name="subject" placeholder='Subject' />
-                    <textarea onChange={(e) => {setMessage(e.target.value)}} className='contact-input mt-2 reveal' rows="4" value={message} name="message" placeholder='Your message'></textarea>
-                    <button disabled={formEmpty} className='contact-btn mt-2 reveal' type='submit'>Submit</button>
-                </form>
-            </div>
-             <div className='map-wrap reveal'>
-                 <MapContainer center={[16.806014, 96.128407]} zoom={13}>
-                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                     <Marker position={[16.806014, 96.128407]}>
-                         <Popup>Yup, this is where I live.</Popup>
-                     </Marker>
-              </MapContainer>
-               </div>
-        </article>
-        <footer className='reveal'>
-        <div> <h1 className='text-logo'>
-                zha<span>red</span>
-            </h1></div>
-            <div>
-            © 2022 designed and built by Zaw Htet Aung
-            </div>
-        </footer>
-        </section>
+          <section className='contact-section'>
+              <div className="contact-curve">
+                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                      <path d="M1200 0L0 0 598.97 114.72 1200 0z" className="shape-fill"></path>
+                  </svg>
+              </div>
+              <h3 className='reveal'>
+                  <AnimatedLetters
+                      letterClass={letterClass}
+                      strArray={contactText}
+                      idx={1}
+                  />
+              </h3>
+              <article className='contact-article'>
+                  <div className='contact-form-container'>
+                      <form ref={form} onSubmit={sendEmail}>
+                          <span>Feel free to send me a message to talk about work. me@zawhtetaung.com</span>
+                          <div className='d-flex mt-2 '>
+                              <input onChange={(e) => { setName(e.target.value) }} className='contact-input reveal' type="text" value={name} name="name" placeholder='Name' />
+                              <input onChange={(e) => { setEmail(e.target.value) }} className='contact-input reveal' type="email" value={email} name="email" placeholder='Your email' />
+                          </div>
+                          <input onChange={(e) => { setSubject(e.target.value) }} className='contact-input mt-2 reveal' type="text" value={subject} name="subject" placeholder='Subject' />
+                          <textarea onChange={(e) => { setMessage(e.target.value) }} className='contact-input mt-2 reveal' rows="4" value={message} name="message" placeholder='Your message'></textarea>
+                          <button disabled={formEmpty} className='contact-btn mt-2 reveal' type='submit'>Submit</button>
+                      </form>
+                  </div>
+                  <div className='map-wrap reveal'>
+                      <MapContainer center={[16.806014, 96.128407]} zoom={13}>
+                          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                          <Marker position={[16.806014, 96.128407]}>
+                              <Popup>Yup, this is where I live.</Popup>
+                          </Marker>
+                      </MapContainer>
+                  </div>
+              </article>
+              <footer className='reveal'>
+                  <div> <h1 className='text-logo'>
+                      zha<span>red</span>
+                  </h1></div>
+                  <div>
+                      © 2022 designed and built by Zaw Htet Aung
+                  </div>
+              </footer>
+          </section>
       </>
   )
 }

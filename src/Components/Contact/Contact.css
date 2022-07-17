@@ -1,11 +1,13 @@
 .contact-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 5% 10%;
     color: #1d1603;
     background: #f1c556;
+    position: relative;
 }
 .contact-section > h3 {
     font-size: 60px;
+    font-weight: 400;
     position: relative;
     border-bottom: 2px solid #f7f0de;
 }
@@ -121,8 +123,31 @@
 }
 
 /* animation */ 
-.contact-section, .contact-section > h3, .contact-input, .contact-btn, .map-wrap{
+.contact-section > h3, .contact-input, .contact-btn, .map-wrap{
     transform: translate(0px, 20px);
     opacity: 0;
     transition: opacity 2s ease;
+}
+
+/* wave */
+
+.contact-curve {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.contact-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 39px;
+}
+
+.contact-curve .shape-fill {
+    fill: #F1C556;
 }

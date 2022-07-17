@@ -58,6 +58,7 @@
  @media only screen and (max-width: 450px) {
      .header-wrap {
          height: 50px;
+         padding: 10px;
      }
      .text-logo {
          font-size: 22px;
@@ -68,6 +69,6 @@
  }
  @media only screen and (max-height: 450px) {
      .header-wrap {
-         height: 50px;
+         height: 40px;
      }
  }

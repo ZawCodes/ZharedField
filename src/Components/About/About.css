@@ -1,11 +1,11 @@
 .about-section {
     color: #1d1603;
     background: #f1c556;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     padding: 5% 10%;
-    opacity: 0;
-    transition: all 2s ease;
+    /* opacity: 0;
+    transition: all 2s ease; */
     position: relative;
 }
 .about-section p {
@@ -141,10 +141,10 @@
     transition: all 1s ease;
     animation-delay: 0.2s;
 }
-.own-pic:hover {
+/* .own-pic:hover {
     transform: scale(250%) translateX(40px);
     z-index: 2;
-}
+} */
 .second-article .left-div {
     width: 40%;
     position: relative;
@@ -316,25 +316,23 @@
 
 /* wave */
 
-.about-wave {
+.about-curve {
     position: absolute;
-    top: -55px;
+    top: -36px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    /* opacity: 0;
-    transition: all 2.5s ease; */
 }
 
-.about-wave svg {
+.about-curve svg {
     position: relative;
     display: block;
-    width: calc(160% + 1.3px);
-    height: 59px;
+    width: calc(100% + 1.3px);
+    height: 39px;
 }
 
-.about-wave .shape-fill {
+.about-curve .shape-fill {
     fill: #F1C556;
 }

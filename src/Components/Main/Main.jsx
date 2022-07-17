@@ -68,7 +68,7 @@ const Main = () => {
                             idx={1}
                             />
                         </h3>
-                        <p>A Front end developer with 3 years of work experience currently living in Myanmar.</p>
+                        <p>I'm a front-end developer, a web designer, an artist and a software engineer currently living in Myanmar.</p>
                         <div style={{marginTop: '40px'}} className='d-flex' onClick={() => scrollToAbout()}>
                             {/* <p className='more blue'>More about me</p> */}
                             <a style={{ textDecoration: 'none'}} target="_blank" href={MyCV}><p className='more orange'>Download Resume</p></a>

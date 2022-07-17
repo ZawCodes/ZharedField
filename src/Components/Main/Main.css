@@ -7,7 +7,7 @@
     background-blend-mode: lighten;
     animation: fadeIn;
     animation-duration: 2s;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* min-height: fit-content; */
     position: relative;
 
@@ -28,7 +28,8 @@
 .main-container h3 {
     display: flex;
     flex-wrap: wrap;
-    /* background: rgba(255, 255, 255, 0.8); */
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
     backdrop-filter: blur(1px);
     width: fit-content;
     padding: 0 10px;
@@ -83,12 +84,12 @@
     padding: 40px;
 }
 .main-container > .left-div > p {
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255, 0.8); */
     backdrop-filter: blur(1px);
     padding: 10px;
     /* padding: 40px; */
     width: 80%;
-    color: #d60038;
+    color: #fff;
     opacity: 0;
     animation: fadeIn;
     animation-duration: 2s;
