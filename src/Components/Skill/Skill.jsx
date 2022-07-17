@@ -22,7 +22,7 @@ const Skill = () => {
         team: 'teamplay',
         problem: 'problemsolve'
     }
-    const frontendSkills = 'Javascript, Typescript, Html, Css, Scss, Angular, Reactjs, Git, Jasmine, Cypress, SQL, MongoDB, Nodejs';
+    const frontendSkills = 'Javascript, Typescript, Html, Css, Scss, Angular, Reactjs, Redux, Git, Jasmine, Cypress, SQL, MongoDB, Nodejs';
     const uiuixSkills = 'Sketch, Figma, Photoshop, Illustrator, Krita, Responsive web design';
     const agileSkills = 'Waterfall Model, Agile Model, Scrum methodology';
     const testingSkills = 'Unit testing, Integration testing, Accceptance testing, Functional testing, Manual testing, Test Automation';
