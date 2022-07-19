@@ -26,6 +26,7 @@
     border-radius: 25%;
 }
 .main-container h3 {
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Advent Pro', sans-serif;
