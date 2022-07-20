@@ -37,7 +37,7 @@ const Work = () => {
                   <img className="line-svg reveal" src={line}/> */}
                 </div>
                 <div className='div2 reveal'>
-                  <h4>2019 October to Current - <a target="_blank" href='https://www.amdon.com/'>The Amdon Consulting</a></h4>
+                  <h4>2019 October to Present - <a target="_blank" href='https://www.amdon.com/'>The Amdon Consulting</a></h4>
                   Build and maintain several web applications for online e-learning and STEM education using Angular and Angularjs.
                 </div>
               </div>
