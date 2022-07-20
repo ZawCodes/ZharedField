@@ -14,7 +14,7 @@
     font-weight: 400;
     position: relative;
     margin-top: 3rem;
-    border-bottom: 2px solid #f1c556;
+    border-bottom: 2px solid #d50038;
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 2s ease;
@@ -44,8 +44,8 @@
 }
 .code-box {
     height: 100%;
-    border: 3px solid #f1c556;
-    background: #fbe5ad;
+    border: 3px solid #373737;
+    background: #fef4e6;
     font-family: 'Courier Prime', monospace;
     padding: 16px;
     border-radius: 4px;
@@ -62,7 +62,7 @@
     margin-bottom: 1.2em;
 }
 .skill-list li, .uit-link {
-    background-image: linear-gradient(rgb(241 197 86), #f1c556);
+    background-image: linear-gradient(rgb(213 0 56), #d50038);
     background-position: 0 100%; /*OR bottom left*/
     background-size: 0% 2px;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 }
 .uit-link {
     text-decoration: none;
-    color: #ff7121;
+    color: #d50038;
 }
 .uit-link:hover {
     background-position: 100% 100%; /*OR bottom right*/
@@ -81,7 +81,7 @@
 .education-article div{
     display: flex;
     justify-content: space-between;
-    background: #fbe5ad;
+    background: #fef4e6;
     padding: 10px;
     border-radius: 10px;
     opacity: 0;
@@ -89,7 +89,7 @@
     animation-delay: 0.2s;
 }
 .education-article > div {
-    border: 1px solid #f1c556;
+    border: 1px solid #373737;
 }
 .uit-img {
     height: 60px;
@@ -149,5 +149,5 @@
 }
 
 .skill-curve .shape-fill {
-    fill: #F7F0DE;
+    fill: antiquewhite;
 }

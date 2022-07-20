@@ -87,7 +87,7 @@ const Contact = () => {
                   </div>
               </article>
               <footer className='reveal'>
-                  <div> <h1 className='text-logo'>
+                  <div> <h1 className='text-logo-black'>
                       zha<span>red</span>
                   </h1></div>
                   <div>

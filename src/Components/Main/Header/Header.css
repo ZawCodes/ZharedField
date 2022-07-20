@@ -21,7 +21,12 @@
     font-size: 34px;
     color: #f7f0de;
 }
-.text-logo > span {
+.text-logo-black {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 34px;
+    color: #373737;
+}
+.text-logo > span,.text-logo-black > span {
     color: #ff4040;
 }
 .header-wrap nav > ul {

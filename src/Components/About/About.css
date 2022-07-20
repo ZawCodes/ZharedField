@@ -1,6 +1,6 @@
 .about-section {
     color: #1d1603;
-    background: #f1c556;
+    background: #ffe8c9;
     /* min-height: 100vh; */
     width: 100%;
     padding: 5% 10%;
@@ -24,7 +24,7 @@
     font-weight: 400;
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #f7f0de;
+    border-bottom: 2px solid #d60139;
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 2s ease;
@@ -72,13 +72,13 @@
 .right-div .me-pic {
     border-radius: 50%;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 1s ease;
     animation-delay: 0.2s;
-    filter: sepia(1);
+    filter: drop-shadow(2px 4px 6px antiquewhite);
 }
 .me-pic:hover {
     filter: none;
@@ -334,5 +334,5 @@
 }
 
 .about-curve .shape-fill {
-    fill: #F1C556;
+    fill: #ffe8c9;
 }

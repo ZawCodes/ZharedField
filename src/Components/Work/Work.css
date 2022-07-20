@@ -2,7 +2,7 @@
     /* min-height: 100vh; */
     padding: 5% 10%;
     color: #1d1603;
-    background: #f1c556;
+    background: #ffe8c9;
     /* opacity: 0; */
     /* transition: all 2s ease; */
     position: relative;
@@ -11,7 +11,7 @@
     font-weight: 400;
     font-size: 60px;
     position: relative;
-    border-bottom: 2px solid #f7f0de;
+    border-bottom: 2px solid #d50038;
     transform: translate(0px, 20px);
     opacity: 0;
     transition: all 2s ease;
@@ -24,8 +24,8 @@
     margin: 3rem;
 }
 .exp-tree a {
-    color: #ff7121;
-    background-image: linear-gradient(rgb(255 113 33), #ff7121);
+    color: #d50038;
+    background-image: linear-gradient(#d50038, #d50038);
     background-position: 0 100%;
     background-size: 0% 2px;
     background-repeat: no-repeat;
@@ -44,10 +44,10 @@
     margin: 0 3%;
 }
 .flip {
-    background: #f7f0de;
+    background: #d50038;
 }
 .flop {
-    background: #ff7121;
+    background: #fff;
 }
 .div1 {
     width: 3px;
@@ -152,5 +152,5 @@
 }
 
 .work-curve .shape-fill {
-    fill: #F1C556;
+    fill: #ffe8c9;
 }

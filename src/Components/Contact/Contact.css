@@ -2,14 +2,14 @@
     /* min-height: 100vh; */
     padding: 5% 10%;
     color: #1d1603;
-    background: #f1c556;
+    background: #ffe8c9;
     position: relative;
 }
 .contact-section > h3 {
     font-size: 60px;
     font-weight: 400;
     position: relative;
-    border-bottom: 2px solid #f7f0de;
+    border-bottom: 2px solid #d50139;
 }
 .contact-article {
     margin-top: 3rem;
@@ -21,7 +21,7 @@
     width: 100%;
     border-radius: 4px;
     /* border: 3px solid #f7f0de; */
-    background: #fbe5ad;
+    background: #fef4e6;
     border: none;
     padding: 1em;
     font-size: 1em;
@@ -34,7 +34,7 @@
     height: auto;
 }
 .contact-input::placeholder {
-    color: #f1c556;
+    color: #373737;
 }
 #toast-container > .toast-success {
     background-color: #ff7121;
@@ -48,14 +48,19 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
   
-.contact-input:focus {
-    background: #977725;
+.contact-input:focus,  .contact-input:focus::placeholder {
+    background: #d50139;
+    color: antiquewhite;
     transition: background-color 0.15s linear;
-    border: 1px solid #f7f0de;
+    /* border: 1px solid #f7f0de; */
     outline: none;
 }
+.contact-input:hover::placeholder {
+    color: antiquewhite;
+}
 .contact-input:hover, .contact-btn:hover {
-    background: #f7f0de;
+    color: antiquewhite;
+    background: #d50139;
     transition: background-color 0.15s linear;
 }
 .contact-input:not(:last-child) {
@@ -65,9 +70,10 @@
     margin-top: 2rem;
 }
 .contact-btn {
+    border: none;
     height: 44px;
-    border: 3px solid #f7f0de;
-    background: #fbe5ad;
+    /* border: 3px solid #373737; */
+    background: #fef4e6;
     max-width: 200px;
     width: 200px;
     font-size: 1em;
@@ -149,5 +155,5 @@
 }
 
 .contact-curve .shape-fill {
-    fill: #F1C556;
+    fill: #ffe8c9;
 }

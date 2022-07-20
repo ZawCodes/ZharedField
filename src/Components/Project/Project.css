@@ -7,7 +7,7 @@
     font-size: 60px;
     font-weight: 400;
     position: relative;
-    border-bottom: 2px solid #f1c556;
+    border-bottom: 2px solid #d50038;
 }
 .proj {
     display: flex;
@@ -22,8 +22,8 @@
     position: relative;
 }
 .project-article a {
-    color: #ff7121;
-    background-image: linear-gradient(rgb(255 113 33), #ff7121);
+    color: #d50038;
+    background-image: linear-gradient(#d50038, #d50038);
     background-position: 0 100%;
     background-size: 0% 2px;
     background-repeat: no-repeat;
@@ -119,5 +119,5 @@
 }
 
 .project-curve .shape-fill {
-    fill: #F7F0DE;
+    fill: antiquewhite;
 }
